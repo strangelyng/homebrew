@@ -1,0 +1,25 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+
+	"_meta": {
+		"sources": [
+			{
+				"json": "WCX-WR",
+				"abbreviation": "WCX-WR",
+				"full": "The Warrior's Codex - Weapons Remastered",
+				"authors": [
+					"Fungal Brews"
+				],
+				"convertedBy": [
+					"Strangelyng"
+				],
+				"version": "2022-02-15",
+                "url": "https://www.gmbinder.com/share/-LTuQ9tRb_ZGFIfKLno4"
+			}
+		],
+        "status": "wip",
+		"dateAdded": 0,
+		"dateLastModified": 0
+	}
+
+}
