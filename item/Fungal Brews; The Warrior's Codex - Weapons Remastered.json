@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew/homebrew.json",
 
 	"_meta": {
 		"sources": [
@@ -19,7 +19,1105 @@
 		],
         "status": "wip",
 		"dateAdded": 0,
-		"dateLastModified": 0
-	}
+		"dateLastModified": 1721428203
+	},
+    "baseitem": [
+        {
+            "name": "Club",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "rarity": "none",
+            "value": 10,
+            "weight": 2,
+            "dmg1": "1d4",
+            "dmgType": "B",
+            "property": [
+                "WCXL",
+                "WCXNL"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 135,
+                    "entries": [
+                        "Any one-handed weapon without a blade or point, used to inflict blunt trauma. In addition to carved clubs like shillelaghs and cudgels, a table leg, candlestick, or bone might make an effective club."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dagger",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "dagger": true,
+            "rarity": "none",
+            "value": 200,
+            "weight": 0.75,
+            "dmg1": "1d4",
+            "dmgType": "P",
+            "property": [
+                "F",
+                "WCXL",
+                "WCXPF",
+                "WCXT"
+            ],
+            "range": "20/60",
+            "entries": [
+                "When you attack with a dagger, you can choose either piercing or slashing damage. You must choose before you make the attack roll.",
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "A small, one-handed knife with a blade that can be straight or curved. The statistics of the dagger include a variety of knives used for cutting, stabbing, or even throwing."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Goedendag",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "mace": true,
+            "rarity": "none",
+            "value": 100,
+            "weight": 3,
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "property": [
+                "WCXFNSH",
+                "WCXSUND",
+                "2H",
+                "WCXWUP"
+            ],
+            "entries": [
+                "When you attack with a goedendag, you can choose either bludgeoning or piercing damage. You must choose before you make the attack roll.",
+                {
+                    "type": "entries",
+                    "page": 135,
+                    "entries": [
+                        "A baseball-bat-like club with a spike on the end that can bash or pierce armored enemies."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Greatclub",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "club": true,
+            "rarity": "none",
+            "value": 50,
+            "weight": 10,
+            "dmg1": "2d4",
+            "dmgType": "B",
+            "property": [
+                "WCXH",
+                "WCXSTGR",
+                "2H"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 135,
+                    "entries": [
+                        "A larger and heavily club, used with two hands for greater striking force. Tree limbs, baseball bats, and the Japanese {@i tetsubo} are all common forms of greatclub."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Guisarme",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "polearm": true,
+            "rarity": "none",
+            "value": 100,
+            "weight": 5,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "property": [
+                "WCXENS",
+                "WCXR",
+                "2H"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "The guisarme's hooked head was used to pull knights from their horses. This polearm was so effective among peasant troops that French nobles campaigned to have it banned. Used between 1000-1300."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Handaxe",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "axe": true,
+            "rarity": "none",
+            "value": 100,
+            "weight": 1,
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "property": [
+                "WCXL",
+                "WCXSLC",
+                "WCXT"
+            ],
+            "range": "20/60",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "A small axe, held in a single hand and used for quick strikes and throwing in battle and a sport. Its versatility as both weapon and tool makes it useful when weight becomes a consideration."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Javelin",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "spear": true,
+            "rarity": "none",
+            "value": 50,
+            "weight": 2,
+            "dmg1": "1d6",
+            "dmgType": "P",
+            "property": [
+                "WCXT"
+            ],
+            "range": "60/120",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "A one-handed short spear used for throwing. The javel, like the spear, has a long and storied history, seeing use by stone-age humans, Greek warriors, Roman soldiers, and African hunters all to incredible effect. Its simplicity, low price, long range, and use of Strength make it ubiquitous."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Light Hammer",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "hammer": true,
+            "rarity": "none",
+            "value": 20,
+            "weight": 1,
+            "dmg1": "1d4",
+            "dmgType": "B",
+            "property": [
+                "WCXL",
+                "WCXSTGR",
+                "WCXSUND",
+                "WCXT"
+            ],
+            "range": "20/60",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "A small hammer, commonly used as a tool. Larger warhammers are more likely to see battlefield use, but in a pinch or when used by an amateur fighter, it can be just as deadly.."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mace",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "mace": true,
+            "rarity": "none",
+            "value": 500,
+            "weight": 4,
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "property": [
+                "WCXSTGR",
+                "WCXSUND"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "The quintessential anti-armor weapon, the mace is a club with a metal haft and large head. Unlike a hammer, the head has radial symmetry, often a ball or set of flanges. Maces are commonly associated with clergy, supposedly to avoid shedding blood while going to war. This belief is based on the Bayeux Tapestry and popular culture perpetuating it (including earlier editions of {@i Dungeons & Dragons}), and has no basis in actual history."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Peasant Flail",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "rarity": "none",
+            "value": 50,
+            "weight": 3,
+            "dmg1": "1d8",
+            "dmgType": "B",
+            "property": [
+                "WCXBY",
+                "WCXSTGR",
+                "2H"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "A tool, like the light hammer and sickle, used as an improvised weapon. Peasant flails modified for war were studded with metal to deal additional damage against armored knights."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Quarterstaff",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "rarity": "none",
+            "value": 20,
+            "weight": 4,
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "2d4",
+            "property": [
+                "WCXNL",
+                "WCXV"
+            ],
+            "entries": [
+                "When you wield a quarterstaff in two hands, it gains the parry property.",
+                {
+                    "type": "entries",
+                    "page": 135,
+                    "entries": [
+                        "A simple staff of hard wood between 6 and 9 feet long, sometimes capped with metal, this weapon was used for duels and defense among the English pre-1500, though records are rare compared to other weapons."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Shortspear",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "spear": true,
+            "rarity": "none",
+            "value": 100,
+            "weight": 4,
+            "dmg1": "1d6",
+            "dmgType": "P",
+            "dmg2": "1d8",
+            "property": [
+                "WCXL",
+                "WCXV"
+            ],
+            "entries": [
+                "When you wield a shortspear in two hands, it gains the skewering property.",
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "A replacement in the Simple Weapons section to represent any short, one-handed thrusting spear that can be easily used in conjunction with a shield or offhand weapon, now that the standard spear has become a one-handed martial weapon with the reach property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sickle",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "M",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "rarity": "none",
+            "value": 100,
+            "weight": 2,
+            "dmg1": "1d4",
+            "dmgType": "P",
+            "property": [
+                "WCXENS",
+                "WCXL",
+                "WCXVAR"
+            ],
+            "entries": [
+                "When you attack with a sickle, you can choose either piercing or slashing damage. You must choose before you make the attack roll.",
+                {
+                    "type": "entries",
+                    "page": 139,
+                    "entries": [
+                        "A small, one-handed farming implement with a curve on the inside of the blade, equally suited to piercing, cutting, catching weapons, and snagging limbs."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blowgun",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "R",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "ammoType": "blowgun needle|WCX-WR",
+            "rarity": "none",
+            "value": 1000,
+            "weight": 1,
+            "dmg1": "1",
+            "dmgType": "P",
+            "property": [
+                "A",
+                "LD",
+                "S"
+            ],
+            "range": "25/50",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 141,
+                    "entries": [
+                        "A hollow tube into which a needle (often poisoned) is place. The user's breath propels the projectile forward in near silence. Popular among assassins and guerillas."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"If you are hidden when you attack with this weapon, you do not reveal your location."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Dart",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "R",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "rarity": "none",
+            "value": 5,
+            "weight": 0.25,
+            "dmg1": "1d4",
+            "dmgType": "P",
+            "property": [
+                "F",
+                "WCXL",
+                "WCXT"
+            ],
+            "range": "20/60",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 141,
+                    "entries": [
+                        "Any sharp, thrown projectile that doesn't fit into the other categories, including light, fletched spears (hurled by atlatls), throwing knives, and shuriken."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Light Crossbow",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "R",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "crossbow": true,
+            "ammoType": "quarrel|WCX-WR",
+            "rarity": "none",
+            "value": 3000,
+            "weight": 1,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "property": [
+                "A",
+                "LD",
+                "2H"
+            ],
+            "range": "60/120",
+            "entries": [
+                "You cannot make ranged attack rolls with a light crossbow if your Strength score is lower than 8.",
+                {
+                    "type": "entries",
+                    "page": 140,
+                    "entries": [
+                        "This easy-to-use crossbow gives users with even basic training effective killing capabilities at range."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Shortbow",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "R",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "bow": true,
+            "ammoType": "arrow|phb",
+            "rarity": "none",
+            "value": 2500,
+            "weight": 1,
+            "dmg1": "1d6",
+            "dmgType": "P",
+            "property": [
+                "A",
+                "2H"
+            ],
+            "range": "90/360",
+            "entries": [
+                "You cannot make ranged attack rolls with a shortbow if your Strength score is lower than 9.",
+                {
+                    "type": "entries",
+                    "page": 139,
+                    "entries": [
+                        "The smallest bows, used by hunters, peasants, and trainees. With a weaker draw weight and shorter range than other bows, they still make effective weapons."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sling",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "R",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "ammoType": "sling bullet|WCX-WR",
+            "rarity": "none",
+            "value": 10,
+            "weight": 0.2,
+            "dmg1": "1d4",
+            "dmgType": "B",
+            "property": [
+                "A",
+                "WCXWUP"
+            ],
+            "range": "30/60",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 141,
+                    "entries": [
+                        "A leather thong or strap into which stones are placed and hurled with centrifugal force. A simple and humble weapon, but not one to be underestimated."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Staff Sling",
+            "source": "WCX-WR",
+            "page": 64,
+            "type": "R",
+            "weaponCategory": "simple",
+            "weapon": true,
+            "ammoType": "sling bullet|WCX-WR",
+            "rarity": "none",
+            "value": 40,
+            "weight": 5,
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "property": [
+                "A",
+                "LD",
+                "S"
+            ],
+            "range": "80/160",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 135,
+                    "entries": [
+                        "A varaint of a sling attached to a long wooden staff for additional leverage, which translates to greater throwing power and distance. These slings not only throw hard projectiles, but also incendiaries and explosives."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"The shaft that adds leverage to the projectiles this sling throws can also be used for close-range combat. This weapon can be wielded in melee combat as a {@item quarterstaff|WCX-WR}. In addition, this weapon can be used to throw bombs to any point within its long range."
+					]
+				}
+            ]
+        },
+        {
+			"name": "Barbed Quarrel",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "A",
+			"bolt": true,
+			"rarity": "none",
+			"weight": 0.06,
+			"value": 15,
+            "entries": [
+                "When you use barbed quarrels, your crossbow attacks gain the slicing property."
+            ]
+		},
+        {
+			"name": "Blowgun Needle",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "A",
+			"needleBlowgun": true,
+			"rarity": "none",
+			"weight": 0.06,
+			"value": 2,
+            "entries": [
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+                        "These minute needles are small enough that a single dose of poison can be spread further. When you apply a poison to blowgun needles, a single dose covers 10 pieces of this ammunition, instead of the usual 3."
+                    ]
+				}
+            ]
+		},
+        {
+			"name": "Bodkin Arrow",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "A",
+			"arrow": true,
+			"rarity": "none",
+			"weight": 0.06,
+			"value": 30,
+            "entries": [
+                "When you use bodkin arrows, your bow attacks gain the sundering property."
+            ]
+		},
+        {
+			"name": "Broadhead",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "A",
+			"arrow": true,
+			"rarity": "none",
+			"weight": 0.06,
+			"value": 50,
+            "entries": [
+                "When you use broadhead arrows, your bow attacks deal slashing damage and gain the slicing property."
+            ]
+		},
+        {
+			"name": "Bullet",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "AF",
+			"rarity": "none",
+			"weight": 0.01,
+			"value": 30
+		},
+        {
+			"name": "Atlatl Dart",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "A",
+			"rarity": "none",
+			"weight": 0.25,
+			"value": 5
+		},
+        {
+			"name": "Field Arrow",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "A",
+			"arrow": true,
+			"rarity": "none",
+			"weight": 0.06,
+			"value": 5,
+            "entries": [
+                "When you use field arrows, your bow attacks gain the nonlethal property."
+            ]
+		},
+        {
+			"name": "Firecage Arrow",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "A",
+			"arrow": true,
+			"rarity": "none",
+			"weight": 0.06,
+			"value": 100,
+            "entries": [
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+                        "The curved metal bars that flare out from the shaft of this arrow carry a burning coal through the air, which sheds dim light in a 5 ft. radius. When you hit with a firecage arrow, half the damage you deal is fire damage, instead of piercing. If you miss with a firecage arrow, choose a space within 15 feet of the target. The arrow ignites objects in that space that aren't being worn or carried."
+                    ]
+				}
+            ]
+		},
+        {
+			"name": "Grapeshot",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "AF",
+			"rarity": "none",
+			"weight": 0.2,
+			"value": 1000,
+            "entries": [
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+                        "Instead of a single bullet, a large number of tiny projectiles fill a canister of grapeshot ammunition. Upon firing, the projectiles fly in a line 5 feet wide and as long as the firearm's normal range. You can target a number of creatures in that line equal to your proficiency bonus, making new attack rolls for each creature."
+                    ]
+				}
+            ]
+		},
+        {
+			"name": "Hunting Bolt",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "A",
+			"bolt": true,
+			"rarity": "none",
+			"weight": 0.06,
+			"value": 2,
+            "entries": [
+                "When you use hunting bolts, your crossbow attacks deal bludgeoning damage and gain the nonlethal property."
+            ]
+		},
+        {
+			"name": "Quarrel",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "A",
+			"bolt": true,
+			"rarity": "none",
+			"weight": 0.06,
+			"value": 5,
+            "entries": [
+                "When you use quarrels, your crossbow attacks gain the staggering property."
+            ]
+		},
+        {
+			"name": "Sling Bullet",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "A",
+			"bulletSling": true,
+			"rarity": "none",
+			"weight": 0.06,
+			"value": 0.2
+		},
+        {
+			"name": "Silver Bullet",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "AF",
+			"rarity": "none",
+			"weight": 0.01,
+			"value": 1500,
+            "entries": [
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+                        "This bullet deals no special damage against most creatures, but any attack with a silver bullet that hits a creature with a special vulnerability to silver, like some fiends or shapechangers, is an automatic critical hit."
+                    ]
+				}
+            ]
+		},
+        {
+			"name": "Whistling Arrow",
+			"source": "WCX-WR",
+			"page": 68,
+			"type": "A",
+            "arrow": true,
+			"rarity": "none",
+			"weight": 0.06,
+			"value": 100,
+            "entries": [
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+                        "The bulb carved from wood or antler behind the point of this arrow creates a loud whistle as it flies through the air, that creatures within 300 feet of the path the arrow travels from the archer to its target can clearly hear."
+                    ]
+				}
+            ]
+		}
+    ],
 
+    "itemProperty": [
+        {
+            "abbreviation": "WCXBY",
+            "source": "WCX-WR",
+            "page": 62,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Bypass",
+                    "entries": [
+                        "These flexible weapons wrap around shields and other personal defenses. When you attack with a bypass weapon, you ignore the AC bonus granted by shields and features that parry or deflect attacks."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXCAV",
+            "source": "WCX-WR",
+            "page": 62,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Cavalry",
+                    "entries": [
+                        "These weapons are well-suited to combat on the move. If you damage a creature with a cavalry weapon after moving at least 20 feet straight toward a target while mounted, you deal an extra (@damage 1d6) damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXENS",
+            "source": "WCX-WR",
+            "page": 62,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Ensnaring",
+                    "entries": [
+                        "These weapons feature chains, hooks, and other entangling components. When you hit with an ensnaring weapon, you can use your bonus action to attempt to {@action shove} the target {@condition prone}, pull or shove it into a space within 5 feet of you, or {@action disarm|DMG} it. If your roll requires you to use your Strength ({@skill Athletics}) bonus, you can add your weapon's attack bonus instead.",
+                        "When you attempt to {@action disarm|DMG} a creature using a weapon with the ensnaring property, you do not have disadvantage on the roll if the target is larger than you."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXFNSH",
+            "source": "WCX-WR",
+            "page": 62,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Finisher",
+                    "entries": [
+                        "These brutal weapons are well-suited to executing enemies at your mercy. When you damage a {@condition prone} creature with a weapon with the finisher property, you roll the weapon's damage dice, as listed on the table, an additional time."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXGUN",
+            "source": "WCX-WR",
+            "page": 62,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Gunpowder",
+                    "entries": [
+                        "These weapons utilize volatile powder as a propellant to fire projectiles or explode. They cannot be used underwater, and ammunition from these weapons cannot be reused. When you attack, the weapon flashes, expels smoke, and creates a bang that can be heard up to 300 feet away. You can reload a gunpowder weapon in place of a single weapon attack on your turn, or with the Use An Object action. Reloading consumes both a charge of powder and a piece of ammunition.",
+                        "Carrying too much powder is risky. When some items with this property take fire or lightning damage, they explode. The saving throw and damage are listed in their descriptions. When a weapon with the gunpowder property takes fire or lightning damage, when loaded, it discharges and must be reloaded before being fired agein."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXH",
+            "source": "WCX-WR",
+            "page": 62,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Heavy",
+                    "entries": [
+                        "These weapons are unwieldier than most. Unless a creature has a Strength score of 13 or higher, it has disadvantage on attacks made with heavy weapons. A Small or smaller creature always suffers this disadvantage. A creature with a Strength score lower than 13 cannot use a shield with the heavy property to increase its AC, and has disadvantage on attack rolls made to bash with it.",
+                        "Before you make an attack with a heavy weapon that you are proficient with, you can forego adding your proficiency bonus to the attack roll. If the attack hits, you add your proficiency bonus to the damage roll. This ability can be used in conjunction with the {@feat Great Weapon Master} feat."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXL",
+            "source": "WCX-WR",
+            "page": 62,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Light",
+                    "entries": [
+                        "These weapons are small and easy to handle, making them ideal for use in an off-hand or fighting with two weapons. See {@action two-weapon fighting|WCX-WR}"
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXNL",
+            "source": "WCX-WR",
+            "page": 62,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Nonlethal",
+                    "entries": [
+                        "These weapons are designed to incapacitate, or are otherwise capable of delivering a hit that does not kill the target. When you choose to knock a creature out instead of killing it, nonlethal weapons deal their normal damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WXCP",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Parry",
+                    "entries": [
+                        "When you are hit by a melee attack while wielding a weapon with the parry property that you are proficient with, you can use your reaction to add half your proficiency bonus to your AC for that attack, potentially causing it to miss. If you do so while wielding two parrying weapons, you add your entire proficiency bonus instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXPF",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Prone Fighting",
+                    "entries": [
+                        "When you are {@condition prone} and make a weapon attack with this weapon, you do not suffer disadvantage for being prone."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXRG",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Ranged",
+                    "entries": [
+                        "These weapons attack at a distance, making ranged attacks instead of melee. Their range is listed in parenthese after the ammunition or thrown property, and lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's long range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You cna't attack a target beyond the weapon's long range. Some ranged weapons have a Strength requirement listed. You cannot make ranged attack rolls with that ranged weapon if your Strength is lower than that value."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXR",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Reach",
+                    "entries": [
+                        "These weapons' extended length adds 5 feet to your reach when you attack with them, as well as when determining your reach for opportunity attacks. Reach weapons cannot be used for {@action two-weapon fighting}, regardless of your Strength or feats."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXSKW",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Skewering",
+                    "entries": [
+                        "These precise weapons reward focused attacks and punch holes in enemy defnses. When an attack roll with a skewering weapon exceeds the target's AC by 5 or more (or lands a critical hit), the next attack roll made against the target gains a bonus equal to your proficiency bonus.",
+                        {
+                            "type": "inset",
+                            "name": "Proficiency Bonus & Skewering",
+                            "entries": [
+                                "While the rules disallow stacking proficiency bonuses, the skewering property allows you to add your proficiency bonus to an attack roll multiple times—once from the roll and once from the bonus inflicted by the skewering property on a previous attack you made on your turn."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXSLC",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Slicing",
+                    "entries": [
+                        "These wicked weapons cut gaping wounds into the flesh, causing profuse bleeding. When an attack roll with a slicing weapon exceeds the target's AC by 5 or more (or lands a critical hit), the target takes additional necrotic damage equal to your proficiency bonus. Constructs, elementals, most undead, and other targets that do not bleed may be immune to this damage at the discretion of your DM."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXSTGR",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Staggering",
+                    "entries": [
+                        "These hard-hitting weapons daze on impact. When an attack roll with a staggering weapon exceeds the target's AC by 5 or more (or lands a critical hit), it has disadvantage on the next ability check it makes before the start of its next turn."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXSUND",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Sundering",
+                    "entries": [
+                        "These weapons crush, break, or pentrate armor. When you attack an object, or a target wearing any medium or heavy armor (other than {@item hide armor|hide}) with a sundering weapon, you gain a +2 bonus to the attack roll. You also gain this bonus against creatures with thick shells, metallic hides, and other creatures at the discretion of your DM. Sundering weapons also ignore damage reduction granted by armor."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXSWP",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Sweeping",
+                    "entries": [
+                        "These weapons strike in broad swings. When you reduce an enemy to 0 hit points with a sweeping weapon, you can target another creature within 5 feet of the first that you can reach and, if the original attack roll would hit it, apply any remaining damage to it. If that creature is likewise reduced to 0 hit points, repeat this process, carrying over the remaining damage until there are no valid targets, or until the damage carried over fails to kill an enemy."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXT",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Thrown",
+                    "entries": [
+                        "These weapons can be thrown out of your hand to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for attack and damage rolls that you would use for a melee attack with it. The normal and long ranges of a weapon with the thrown property increase by a number of feet equal to 5 times your Strength modifier, unless you Strength modifier is negative."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXVAR",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Variable",
+                    "entries": [
+                        "These weapons can deal multiple damage types, and inflict different effects as a result. When you attack with a variable weapon, it gains the corresponding property for that attack. Bludgeoning attacks gain the staggering property, piercing attacks gain skewering, and slashing attacks gain slicing."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXV",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Versatile",
+                    "entries": [
+                        "These weapons can be wielded in one or both hands. When you wield a versatile weapon in two hands, it gains an additional property and uses different damage dice, both listed in parentheses behind the versatile property on the weapons table. See {@action versatile fighting|WCX-WR}"
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXWUP",
+            "source": "WCX-WR",
+            "page": 63,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Wind-up",
+                    "entries": [
+                        "These weapons can be devastating when prepared for the right moment. In place of a weapon attack, you can wind up your weapon or brace it against the ground, depending on the weapon's design. The next time you hit with the wound-up weapon before the start of your next turn, you can roll two additional damage dice. After the attack, the weapon is no longer wound-up. A wound-up melee weapon can be used to make an opportunity attack with advantage when a hostile creature that you can see enters your reach."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXWNG",
+            "source": "WCX-WR",
+            "page": 64,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Winged",
+                    "entries": [
+                        "These weapons prevent targets from approaching and can catch weapons. You can use a bonus action to attempt to {@action disarm|DMG} a creature within reach using a winged weapon.",
+                        "After you damage a creature with a winged weapon you can {@action grapple} it, a {@condition grappled} creature cannot move straight toward you and the area within your reach is difficult terrain for it until it leaves your reach or you attack with the weapon again.",
+                        "While holding a creature in this way, you can use a bonus action to attempt to {@action shove} it. The hold ends if you shove the target outside the weapon's reach.",
+                        "If one of the above rolls uses your Strength ({@skill Athletics}) bonus, you can add the weapon's attack bonus instead."
+                    ]
+                }
+            ]
+        }
+    ],
+    "variantrule": [
+        {
+            "name": "Property Damage Dice",
+            "source": "WCX-WR",
+            "page": 62,
+            "entries": [
+                {
+                    "type": "entries",
+                    "entries": [
+                        "Effects such as a barbarian's {@classFeature Brutal Critical|Barbarian|9} or the {@optfeature Great Weapon Fighting} fighting style do not affect damage dice granted by properties such as finisher and wind-up, since bonus damage dice from properties are not weapon damage dice.",
+                        "For example, when a 9th-level barbarian lands a critical hit with a {@item greatsword|WCX-WR} against a {@condition prone} enemy, they roll {@damage 10d6} damage; 2d6 from the weapon, another 2d6 from finisher, which are both doubled by the critical hit, and a final 2d6 from {@classFeature Brutal Critical|Barbarian|9}. While finisher's dice are rolled again by the critical hit, they are not weapon damage dice that Brutal Critical adds once more.",
+                        "Similarly, a fighter with the {@optfeature Great Weapon Fighting} style that strikes an enemy with a wound-up {@item pike|WCX-WR} can only reroll a 1 or 2 on the 1d10 rolled by the pike itself, not the remaining 2d10 granted by the wind-up property."
+                    ]
+                }
+            ]
+        }
+    ]
 }
