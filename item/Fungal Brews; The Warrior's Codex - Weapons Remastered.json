@@ -19,7 +19,11 @@
 		],
         "status": "wip",
 		"dateAdded": 0,
-		"dateLastModified": 1721601487
+		"dateLastModified": 1721601487,
+        "internalCopies": [
+            "action",
+            "itemProperty"
+        ]
 	},
     "action": [
         {
@@ -27,7 +31,7 @@
             "source": "WCX-WR",
             "page": 87,
             "entries": [
-                "Once on your turn when you make a melee weapon attack or special melee attack such as a {@action grapple} or {@action shove} against a creature using one hand, you can make one additional attack using a melee weapon with the light property that you're holding in the other hand. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative. You cannot make this additional attack if you have already engaged in {@action versatile fighting|WCX=WR} in the same turn."
+                "Once on your turn when you make a melee weapon attack or special melee attack such as a {@action grapple} or {@action shove} against a creature using one hand, you can make one additional attack using a melee weapon with the light property that you're holding in the other hand. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative. You cannot make this additional attack if you have already engaged in {@action versatile fighting|WCX-WR} in the same turn."
             ],
             "seeAlsoAction": [
                 "Attack"
@@ -38,7 +42,7 @@
             "source": "WCX-WR",
             "page": 87,
             "entries": [
-                "Once on your turn when you make a melee weapon attack or special melee attack such as a {@action grapple} or {@action shove} against a creature using one hand, you can make one additional attack using a melee weapon with the versatile property that you're holding in the other hand. You make the attack with one hand on the weapon, even if you still have a free hand. You cannot make this additional attack if you have already engaged in {@action two-weapon fighting|WCX=WR} in the same turn."
+                "Once on your turn when you make a melee weapon attack or special melee attack such as a {@action grapple} or {@action shove} against a creature using one hand, you can make one additional attack using a melee weapon with the versatile property that you're holding in the other hand. You make the attack with one hand on the weapon, even if you still have a free hand. You cannot make this additional attack if you have already engaged in {@action two-weapon fighting|WCX-WR} in the same turn."
             ],
             "seeAlsoAction": [
                 "Attack"
@@ -1286,7 +1290,7 @@
             "dmg1": "1d4",
             "dmgType": "P",
             "property": [
-                "WCXENSE",
+                "WCXENS",
                 "F",
                 "WCXL",
                 "WCXP",
@@ -1883,7 +1887,7 @@
 			"type": "A",
 			"bolt": true,
 			"rarity": "none",
-			"weight": 0.06,
+			"weight": 0.0625,
 			"value": 15,
             "entries": [
                 {
@@ -1902,7 +1906,7 @@
 			"type": "A",
 			"needleBlowgun": true,
 			"rarity": "none",
-			"weight": 0.06,
+			"weight": 0.0625,
 			"value": 2,
             "entries": [
                 {
@@ -1921,7 +1925,7 @@
 			"type": "A",
 			"arrow": true,
 			"rarity": "none",
-			"weight": 0.06,
+			"weight": 0.0625,
 			"value": 30,
             "entries": [
                 {
@@ -1940,7 +1944,7 @@
 			"type": "A",
 			"arrow": true,
 			"rarity": "none",
-			"weight": 0.06,
+			"weight": 0.0625,
 			"value": 50,
             "entries": [
                 {
@@ -1968,7 +1972,7 @@
 			"type": "A",
 			"arrow": true,
 			"rarity": "none",
-			"weight": 0.06,
+			"weight": 0.0625,
 			"value": 5,
             "entries": [
                 {
@@ -1987,7 +1991,7 @@
 			"type": "A",
 			"arrow": true,
 			"rarity": "none",
-			"weight": 0.06,
+			"weight": 0.0625,
 			"value": 100,
             "entries": [
                 {
@@ -2024,7 +2028,7 @@
 			"type": "A",
 			"bolt": true,
 			"rarity": "none",
-			"weight": 0.06,
+			"weight": 0.0625,
 			"value": 2,
             "entries": [
                 {
@@ -2043,7 +2047,7 @@
 			"type": "A",
 			"bolt": true,
 			"rarity": "none",
-			"weight": 0.06,
+			"weight": 0.0625,
 			"value": 5,
             "entries": [
                 {
@@ -2062,7 +2066,7 @@
 			"type": "A",
 			"bulletSling": true,
 			"rarity": "none",
-			"weight": 0.06,
+			"weight": 0.0625,
 			"value": 0.2
 		},
         {
@@ -2090,7 +2094,7 @@
 			"type": "A",
             "arrow": true,
 			"rarity": "none",
-			"weight": 0.06,
+			"weight": 0.0625,
 			"value": 100,
             "entries": [
                 {
@@ -2221,7 +2225,7 @@
             ]
         },
         {
-            "abbreviation": "WXCP",
+            "abbreviation": "WCXP",
             "source": "WCX-WR",
             "page": 63,
             "entries": [
@@ -2244,20 +2248,6 @@
                     "name": "Prone Fighting",
                     "entries": [
                         "When you are {@condition prone} and make a weapon attack with this weapon, you do not suffer disadvantage for being prone."
-                    ]
-                }
-            ]
-        },
-        {
-            "abbreviation": "WCXRG",
-            "source": "WCX-WR",
-            "page": 63,
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Ranged",
-                    "entries": [
-                        "These weapons attack at a distance, making ranged attacks instead of melee. Their range is listed in parenthese after the ammunition or thrown property, and lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's long range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You cna't attack a target beyond the weapon's long range. Some ranged weapons have a Strength requirement listed. You cannot make ranged attack rolls with that ranged weapon if your Strength is lower than that value."
                     ]
                 }
             ]
