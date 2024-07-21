@@ -19,8 +19,32 @@
 		],
         "status": "wip",
 		"dateAdded": 0,
-		"dateLastModified": 1721428203
+		"dateLastModified": 1721601487
 	},
+    "action": [
+        {
+            "name": "Two-Weapon Fighting",
+            "source": "WCX-WR",
+            "page": 87,
+            "entries": [
+                "Once on your turn when you make a melee weapon attack or special melee attack such as a {@action grapple} or {@action shove} against a creature using one hand, you can make one additional attack using a melee weapon with the light property that you're holding in the other hand. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative. You cannot make this additional attack if you have already engaged in {@action versatile fighting|WCX=WR} in the same turn."
+            ],
+            "seeAlsoAction": [
+                "Attack"
+            ]
+        },
+        {
+            "name": "Versatile Fighting",
+            "source": "WCX-WR",
+            "page": 87,
+            "entries": [
+                "Once on your turn when you make a melee weapon attack or special melee attack such as a {@action grapple} or {@action shove} against a creature using one hand, you can make one additional attack using a melee weapon with the versatile property that you're holding in the other hand. You make the attack with one hand on the weapon, even if you still have a free hand. You cannot make this additional attack if you have already engaged in {@action two-weapon fighting|WCX=WR} in the same turn."
+            ],
+            "seeAlsoAction": [
+                "Attack"
+            ]
+        }
+    ],
     "baseitem": [
         {
             "name": "Club",
@@ -69,12 +93,18 @@
             ],
             "range": "20/60",
             "entries": [
-                "When you attack with a dagger, you can choose either piercing or slashing damage. You must choose before you make the attack roll.",
                 {
                     "type": "entries",
                     "page": 136,
                     "entries": [
                         "A small, one-handed knife with a blade that can be straight or curved. The statistics of the dagger include a variety of knives used for cutting, stabbing, or even throwing."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a dagger, you can choose either piercing or slashing damage. You must choose before you make the attack roll."
                     ]
                 }
             ]
@@ -99,12 +129,18 @@
                 "WCXWUP"
             ],
             "entries": [
-                "When you attack with a goedendag, you can choose either bludgeoning or piercing damage. You must choose before you make the attack roll.",
                 {
                     "type": "entries",
                     "page": 135,
                     "entries": [
                         "A baseball-bat-like club with a spike on the end that can bash or pierce armored enemies."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a goedendag, you can choose either bludgeoning or piercing damage. You must choose before you make the attack roll."
                     ]
                 }
             ]
@@ -323,12 +359,18 @@
                 "WCXV"
             ],
             "entries": [
-                "When you wield a quarterstaff in two hands, it gains the parry property.",
                 {
                     "type": "entries",
                     "page": 135,
                     "entries": [
                         "A simple staff of hard wood between 6 and 9 feet long, sometimes capped with metal, this weapon was used for duels and defense among the English pre-1500, though records are rare compared to other weapons."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a quarterstaff in two hands, it gains the parry property."
                     ]
                 }
             ]
@@ -352,12 +394,18 @@
                 "WCXV"
             ],
             "entries": [
-                "When you wield a shortspear in two hands, it gains the skewering property.",
                 {
                     "type": "entries",
                     "page": 134,
                     "entries": [
                         "A replacement in the Simple Weapons section to represent any short, one-handed thrusting spear that can be easily used in conjunction with a shield or offhand weapon, now that the standard spear has become a one-handed martial weapon with the reach property."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a shortspear in two hands, it gains the skewering property."
                     ]
                 }
             ]
@@ -380,12 +428,18 @@
                 "WCXVAR"
             ],
             "entries": [
-                "When you attack with a sickle, you can choose either piercing or slashing damage. You must choose before you make the attack roll.",
                 {
                     "type": "entries",
                     "page": 139,
                     "entries": [
                         "A small, one-handed farming implement with a curve on the inside of the blade, equally suited to piercing, cutting, catching weapons, and snagging limbs."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a sickle, you can choose either piercing or slashing damage. You must choose before you make the attack roll."
                     ]
                 }
             ]
@@ -475,12 +529,18 @@
             ],
             "range": "60/120",
             "entries": [
-                "You cannot make ranged attack rolls with a light crossbow if your Strength score is lower than 8.",
                 {
                     "type": "entries",
                     "page": 140,
                     "entries": [
                         "This easy-to-use crossbow gives users with even basic training effective killing capabilities at range."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Strength",
+                    "entries": [
+                        "You cannot make ranged attack rolls with a light crossbow if your Strength score is lower than 8."
                     ]
                 }
             ]
@@ -505,12 +565,18 @@
             ],
             "range": "90/360",
             "entries": [
-                "You cannot make ranged attack rolls with a shortbow if your Strength score is lower than 9.",
                 {
                     "type": "entries",
                     "page": 139,
                     "entries": [
                         "The smallest bows, used by hunters, peasants, and trainees. With a weaker draw weight and shorter range than other bows, they still make effective weapons."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Strength",
+                    "entries": [
+                        "You cannot make ranged attack rolls with a shortbow if your Strength score is lower than 9."
                     ]
                 }
             ]
@@ -580,6 +646,1237 @@
             ]
         },
         {
+            "name": "Arming Sword",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 2000,
+            "weight": 2,
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "property": [
+                "WCXP",
+                "WCXSKW",
+                "WCXSLC"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 137,
+                    "entries": [
+                        "Any sword used as a sidearm. In this document, it refers to the knightly sword, a one-handed weapon used for both cutting and thrusting by early medieval knights after their supply of lances were exhausted. Commonly called a \"broadsword\", that term was likely not used by contemporaries. The knightly sword was admired all over the world; their trade was heavily regulated and both Viking treasure-hoarders and Islamic historians praised the craftsmanship of Frankish blades in the Early Middle Ages."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with an arming sword, you can choose either piercing or slashing damage. You must choose before you make the attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bastard Sword",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 3000,
+            "weight": 3,
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "dmg2": "2d4",
+            "property": [
+                "WCXP",
+                "WCXVAR",
+                "WCXV"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 137,
+                    "entries": [
+                        "A popular modern media term for a moderately-heavy sword that can be used in one or both hands. Historical evidence for a weapon of that kind is spotty, but it may have existed. Because fantasy references it so often and its versatility is undeniable; it is included here.."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a bastard sword, you can choose either piercing or slashing damage. You must choose before you make the attack roll."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a bastard sword in two hands, it gains the sweeping property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Battleaxe",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "axe": true,
+            "rarity": "none",
+            "value": 1000,
+            "weight": 3,
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "dmg2": "2d4",
+            "property": [
+                "WCXSLC",
+                "WCXSWP",
+                "WCXV"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 137,
+                    "entries": [
+                        "A mighty one- or two-handed axe, used for cutting down enemies. Often depicted in the hands of barbarians, vikings, dwarves, and orcs, this weapon might have one or two heads. Battle-axes are specialized for combat rather than utility, often with all-metal hafts to prevent breakage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a battleaxe in two hands, it gains the finisher property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Boar Spear",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "spear": true,
+            "rarity": "none",
+            "value": 500,
+            "weight": 5,
+            "dmg1": "1d6",
+            "dmgType": "P",
+            "dmg2": "1d8",
+            "property": [
+                "WCXV",
+                "WCXWUP",
+                "WCXWNGD"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "These short, heavy spears are equipped with two lugs perpendicular to the head, which prevent the large animals it was used to hunt from sliding up the haft and attacking the wielder. Used to hunt boars, larger variants were used agaainst bears and European bison. In war, they were used against warhorses. This spear has existed since at least 1200 A.D."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a boar spear in two hands, it gains the reach property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cestus",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "rarity": "none",
+            "value": 100,
+            "weight": 0.5,
+            "dmg1": "1d4",
+            "dmgType": "B",
+            "property": [
+                "WCXL",
+                "WCXENS",
+                "WCXNL",
+                "S",
+                "WCXSTGR"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 139,
+                    "entries": [
+                        "For the purposes of this document, the cestus is any kind of fist weapon, including tekko, brass knuckles, and boxing gloves. Historically, the Roman cestus referred to strips of leather wrapped aroudn the knuckles and upper arms, sometimes studded ro spiked."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"Cestus are not held in the hand but are wrapped around the knuckles and forearm, or worn as gloves. If you are wielding a cestus, you can use that hand to grapple or shove an enemy, or load a ranged weapon, but you cannot attack with that cestus without ending the grapple.",
+                        "You cannot wield other weapons or shields in that hand, nor use it to perform somatic components. You cannot drop a cestus or be disarmed of one unless you are {@condition incapacitated}. You must use an action to don or doff a cestus, but can don or doff a pair of cestus in one action."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Estoc",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 2500,
+            "weight": 2,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "dmg2": "2d4",
+            "property": [
+                "F",
+                "WCXSUND",
+                "WCXV"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 138,
+                    "entries": [
+                        "A long, thin sword, sturdy and specialized for piercing rather than cutting, the edgeless estoc is designed to puncture mail (according to some sources) and slip through gaps in plate (according to others). Either way, this two-handed thrusting sword counters heavy armor."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield an estoc in two hands, it gains the parry property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Flail",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "rarity": "none",
+            "value": 1000,
+            "weight": 2,
+            "dmg1": "1d8",
+            "dmgType": "B",
+            "property": [
+                "WCXBY",
+                "WCXENS",
+                "WCXWUP"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 135,
+                    "entries": [
+                        "A spiked sphere of iron attached to a wooden handle by a chain that may not have existed at all. Depictions are few and archaeological examples fewer, casting doubt on its existence, but he flail is too ubiquitous to remove. At the discretion of the DM, it might be an exotic weapon, rather than martial."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a flail, you can choose either bludgeoning or piercing damage. You must choose before you make the attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Glaive",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "polearm": true,
+            "rarity": "none",
+            "value": 2000,
+            "weight": 5,
+            "dmg1": "1d10",
+            "dmgType": "S",
+            "property": [
+                "WCXH",
+                "WCXR",
+                "WCXSWP",
+                "2H"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "A single-edged blade attached to a long haft, which increases its cutting power. The statistics of the glaive can also be applied to many other cutting pole weapons.."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Greataxe",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "axe": true,
+            "rarity": "none",
+            "value": 2500,
+            "weight": 4,
+            "dmg1": "1d12",
+            "dmgType": "S",
+            "property": [
+                "WCXFNSH",
+                "WCXH",
+                "WCXSLC",
+                "WCXSTGR",
+                "2H"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 137,
+                    "entries": [
+                        "A greataxe is a long battleaxe with a haft too short to be considered a halberd or glaive. Cmmonly depicted as a headsman's axe, in D&D the greataxe is heavier and hits harder than its longer-reached brethren."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Greatsword",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 5000,
+            "weight": 6,
+            "dmg1": "2d6",
+            "dmgType": "S",
+            "property": [
+                "WCXH",
+                "WCXP",
+                "WCXSWP",
+                "2H",
+                "WCXVAR"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 137,
+                    "entries": [
+                        "The evolution of the two-handed straight sword is a long and complicated one that is not altogether clear. In this document, a greatsword refers to the large two-handed swords that emerged during the late Middle Ages and early Renaissance to counter polearms, such as the German zweihander and the flamberge, as well as the Scottish claymore. They are later evolutions of the cruciform longsword and the knightly sword before them, and contemporaries referred to them all as a longsword."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a greatsword, you can choose either piercing or slashing damage. You must choose before you make the attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Halberd",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "polearm": true,
+            "rarity": "none",
+            "value": 2500,
+            "weight": 5,
+            "dmg1": "1d10",
+            "dmgType": "S",
+            "property": [
+                "WCXENS",
+                "WCXH",
+                "WCXR",
+                "2H",
+                "WCXVAR"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "The halberd combines cutting power, long reach, and a rearward hook to create a deadly combination of options. Popoular from the 15th century onwards, German mercenaries used the halberd for centuries and the Swiss guard carries it ceremonially today."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a halberd, you can choose either piercing or slashing damage. You must choose before you make the attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Harpoon",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "spear": true,
+            "rarity": "none",
+            "value": 1000,
+            "weight": 4,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "property": [
+                "WCXSLC",
+                "WCXT"
+            ],
+            "range": "60/120",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "Used for underwater hunting by islander and coastal cultures, the iron varieties used by 19th-century whalers made this weapon infamous. The head of the harpoon has rear-facing barbs, making it difficult and painful to withdraw.."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lance",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "rarity": "none",
+            "value": 1000,
+            "weight": 1,
+            "dmg1": "1d12",
+            "dmgType": "P",
+            "property": [
+                "WCXCAV",
+                "WCXR",
+                "S",
+                "WCXSKW"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "The staple weapon of the Medieval knight, the lance transfers the momentum of a horse's charge into a single point. It is the primary reason knights dominated medieval warfare, and why many other weapons—the guisarme, the mace, and the warhammer—were designed to counter them."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"You have disadvantage when you use a lance to attack a target within 5 feet of you. A lance requires two hands to wield when you aren't mounted."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Longsword",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 3500,
+            "weight": 3,
+            "dmg1": "1d10",
+            "dmgType": "S",
+            "property": [
+                "WCXENS",
+                "WCXP",
+                "WCXSUND",
+                "2H",
+                "WCXVAR"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 137,
+                    "entries": [
+                        "The word \"longsword\" has had many meanings. In this document, it refers ot the two-handed \"cruciform sword\" popular with knights in the later parts of the middle ages, which predated the larger Renaissance weapons commonly called \"greatswords\" today. In addition to cutting and thrusting with two hands on the hilt, the user can grip the midpart of the blade to thrust with precision, or even switch to a reverse grip to strike the enemy with the pommel, which imitates the impact of a warhammer."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a longsword, you can choose either bludgeoning, piercing, or slashing damage. You must choose before you make the attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lucerne",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "polearm": true,
+            "rarity": "none",
+            "value": 2000,
+            "weight": 6,
+            "dmg1": "1d10",
+            "dmgType": "B",
+            "property": [
+                "WCXH",
+                "WCXR",
+                "WCXSUND",
+                "2H"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "A polearm with a hammerhead on the end, used for striking enemies with blunt force at distance. A pike-like point and spike on the far side allowed its users to pierce as well as strike, affording it versatility in large groups and giving plenty of opportunity for swift thrusting attacks."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a lucerne, you can choose either bludgeoning or piercing damage. You must choose before you make the attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Maul",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "hammer": true,
+            "rarity": "none",
+            "value": 1000,
+            "weight": 10,
+            "dmg1": "2d6",
+            "dmgType": "B",
+            "property": [
+                "WCXFNSH",
+                "WCXH",
+                "WCXSTGR",
+                "WCXSUND",
+                "2H"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "A mighty two-handed warhammar, often depicted with a head far larger that the longer-hafted lucern or a one-handed hammer. A maul might also be used to break rocks or hammer spikes into the ground."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Messer",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 1000,
+            "weight": 2,
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "dmg2": "2d4",
+            "property": [
+                "WCXP",
+                "WCXSLC",
+                "WCXV"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "One-handed, one-sided German swords used by civilians for personal defense, messers were legally defined as knives, rather than swords, and were not subject to the same size and weight restrictions. An early attempt at circumventing arms control."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a messer in two hands, it gains the staggering property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Morningstar",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "mace": true,
+            "rarity": "none",
+            "value": 1500,
+            "weight": 4,
+            "dmg1": "1d8",
+            "dmgType": "B",
+            "property": [
+                "WCXSKW",
+                "WCXSTGR",
+                "WCXSUND"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "Similar to the mace, this heavy mass at the end of a wooden haft is covered in sharp spikes, unlike the smooth surface, knobs, or flanges of its metal-hafted cousin."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a morningstar, you can choose either bludgeoning or piercing damage. You must choose before you make the attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Parrying Dagger",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "dagger": true,
+            "rarity": "none",
+            "value": 500,
+            "weight": 1,
+            "dmg1": "1d4",
+            "dmgType": "P",
+            "property": [
+                "WCXENSE",
+                "F",
+                "WCXL",
+                "WCXP",
+                "WCXPF"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "As fencing developed, rapiers and other swords were often accompanied by daggers used for defense. The parrying dagger, with a larger guard to better catch enemy blades, was specialized for such defenses."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Pike",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "rarity": "none",
+            "value": 500,
+            "weight": 5,
+            "dmg1": "1d10",
+            "dmgType": "P",
+            "property": [
+                "WCXH",
+                "WCXR",
+                "2H",
+                "WCXWUP"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "The quintessential polearm, this long two-handed spear saw use in mass military units, where the cluster of sharp points warded off cavalry charges and kept enemies out of reach. The pike actually survived knights' obsolescence into the era of gunpowder; \"pike and shotte\" formations used pikemen and halberdiers to protect arquebusiers and musketeers between volleys."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Pollaxe",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "polearm": true,
+            "rarity": "none",
+            "value": 2500,
+            "weight": 5,
+            "dmg1": "1d10",
+            "dmgType": "S",
+            "property": [
+                "WCXH",
+                "WCXP",
+                "WCXSUND",
+                "2H",
+                "WCXVAR"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "Wielded like a bladed staff instead of an axe or polearm, this weapon features an axe head, a hammerhead, a upward point, and lateral spikes allm ounted on the head. Like the longsword, a pollaxe can accomplish almost anything a dismounted knight needed in combat."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a pollaxe, you can choose either bludgeoning, piercing, or slashing damage. You must choose before you make the attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ranseur",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "polearm": true,
+            "rarity": "none",
+            "value": 2500,
+            "weight": 5,
+            "dmg1": "1d10",
+            "dmgType": "S",
+            "property": [
+                "WCXH",
+                "WCXR",
+                "2H",
+                "WCXWNGD"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "Similar to the boar spear, the head of a ranseur features a pair of additional points at angles, to prevent enemies and animals from pushing the haft deeper in and allowing the user to keep the attacker at bay. Some variants sharpened the outer ends of the points, allowing the ranseur to cut as well as pierce.."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a ransuer, you can choose either piercing or slashing damage. You must choose before you make the attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Rapier",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 2500,
+            "weight": 3,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "property": [
+                "F",
+                "WCXP",
+                "WCXSKW"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 138,
+                    "entries": [
+                        "One of the most famous fencing weapons, rapiers are sharpened along both blades instead of the point-only weapons commonly imagined. Often with a swept hilt or cup hilt to defend the hand, these light swrods were popular in Renaissance courts."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Rondel",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "dagger": true,
+            "rarity": "none",
+            "value": 500,
+            "weight": 1,
+            "dmg1": "1d4",
+            "dmgType": "P",
+            "property": [
+                "F",
+                "WCXFNSH",
+                "WCXL",
+                "WCXPF",
+                "WCXSUND"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "A metal spike with a round handle used to pierce the armored plates or gaps in the armor of a prone knight."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sabre",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 2500,
+            "weight": 3,
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "property": [
+                "WCXCAV",
+                "F",
+                "WCXP"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 138,
+                    "entries": [
+                        "Popular among cavalrymen in the Early Modern Period (the Napoleonic wars and surrounding era), these blades combine the elegance of fencing weapons with the force-transfer of the lance centuries prior to create an elegant weapon that can be used on horseback or on foot, to cut enemies with brutal slashes or parry their attacks with elegant ease."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Scimitar",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 2000,
+            "weight": 3,
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "property": [
+                "WCXCAV",
+                "F",
+                "WCXL",
+                "WCXSLC"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 138,
+                    "entries": [
+                        "This one-handed curved sword—shorter and lighter than a sabre—originated in the pre-Ottoman Middle East. A weapon equally suited to devastating slashes delivered from horseback and on foot, the scimitar persisted for centuries. Several subtypes exist, each similar to a sabre in its native lands, and the terms has fallen out of use today."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Shortsword",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 1500,
+            "weight": 2,
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "property": [
+                "F",
+                "WCXL",
+                "WCXP",
+                "WCXVAR"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 137,
+                    "entries": [
+                        "A wide category that covers any one-handed blade too short to be considered another kind of arming sword but too long to be used as a knife."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a shortsword, you can choose either piercing or slashing damage. You must choose before you make the attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Shotel",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 1500,
+            "weight": 3,
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "property": [
+                "WCXBY",
+                "WCXENS",
+                "F"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 138,
+                    "entries": [
+                        "An ancient weapon that originated in Ethiopia. Unlike the rest of the curved swords, the interior curve contains the sharp edge of this weapon, similar to a sickle. According to contemporaries, they were used both to pull mounted enemies from horseback and to circumvent shields, both to terrifying effect."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "When you attack with a shotel, you can choose either piercing or slashing damage. You must choose before you make the attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spear",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "spear": true,
+            "rarity": "none",
+            "value": 200,
+            "weight": 4,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "dmg2": "1d10",
+            "property": [
+                "WCXR",
+                "WCXV"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "The mechanics of the spear as they appear in this document represent a one-handed weapon between 6 and 9 feet long, with a stone or metal point on the end. Some two-handed spears have specialized heads or functions. Those spears are also called polearms, and classified separately in this document, but the real line is blurrier."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a spear in two hands, it gains the wind-up property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "War Pick",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "rarity": "none",
+            "value": 1500,
+            "weight": 2,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "dmg2": "2d4",
+            "property": [
+                "WCXSKW",
+                "WCXSUND",
+                "WCXV"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "Also called a horseman's pick, this subtype of warhammer with a long spike on the head was used by Polish cavalry in the 1600s to pierce and crush armor, by directing all the force of the swing into a single painful point."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a war pick in two hands, it gains the ensnaring property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warhammer",
+            "source": "WCX-WR",
+            "page": 65,
+            "type": "M",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "hammer": true,
+            "rarity": "none",
+            "value": 1500,
+            "weight": 2,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "dmg2": "2d4",
+            "property": [
+                "WCXSTGR",
+                "WCXSUND",
+                "WCXV"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 136,
+                    "entries": [
+                        "Any hammer used for combat rather than work, introduced during the late Middle Ages to counter the development of heavy armor which deflected blows from axes and swords. For the purposes of this document, longer warhammers are classified as mauls, and even longer warhammers are classified as lucernes, a blunt polearm."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a warhammer in two hands, it gains the finisher property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Atlatl",
+            "source": "WCX-WR",
+            "page": 66,
+            "type": "R",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "ammoType": "dart|WCX-WR",
+            "rarity": "none",
+            "value": 2000,
+            "weight": 2,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "property": [
+                "A",
+                "S",
+                "WCXSKW"
+            ],
+            "range": "100/200",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 141,
+                    "entries": [
+                        "Dated to Ice Age cultures across Europe, Australia, and the Americas that persisted until the Aztec Empire, this handle of carved wood, antler, or bone had a curved or hooked end to hold a dart hurled by the pitching motion. The leverage added shot the javelin further and with more force and accuracy than possible with hand alone. Believed by some to be a missing link between javelins and bows."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"The atlatl benefits from skill with both ranged and thrown weapons, though it is considered a ranged weapon. You can use your Strength modifier to increase the range of darts hurled with this weapon, as though it had the thrown property, and it and its darts are considerted thrown weapons when used to make ranged attacks for the purposes of benefits such as the Thrown Weapon Fighting fighting style."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Hand Crossbow",
+            "source": "WCX-WR",
+            "page": 66,
+            "type": "R",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "crossbow": true,
+            "ammoType": "quarrel|WCX-WR",
+            "rarity": "none",
+            "value": 7500,
+            "weight": 2,
+            "dmg1": "1d6",
+            "dmgType": "P",
+            "property": [
+                "A",
+                "WCXL",
+                "LD",
+                "WCXPF"
+            ],
+            "range": "30/60",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 140,
+                    "entries": [
+                        "A small crossbow held in one hand, not unlike a modern pistol. Often dual-wielded. May or may not have actually existed; most results from cursory research refer back to tabletop RPGs but some references exist to their use in \"parlor shooting\"."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Heavy Crossbow",
+            "source": "WCX-WR",
+            "page": 66,
+            "type": "R",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "crossbow": true,
+            "ammoType": "quarrel|WCX-WR",
+            "rarity": "none",
+            "value": 5000,
+            "weight": 6,
+            "dmg1": "1d12",
+            "dmgType": "P",
+            "property": [
+                "A",
+                "WCXH",
+                "LD",
+                "WCXSUND",
+                "2H"
+            ],
+            "range": "100/200",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 140,
+                    "entries": [
+                        "Mighty crossbows, often with arms of metal, that deliver enormous force and require significant strength to crank."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Strength",
+                    "entries": [
+                        "You cannot make ranged attack rolls with a heavy crossbow if your Strength score is lower than 12."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Longbow",
+            "source": "WCX-WR",
+            "page": 66,
+            "type": "R",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "bow": true,
+            "ammoType": "arrow|WCX-WR",
+            "rarity": "none",
+            "value": 7000,
+            "weight": 2,
+            "dmg1": "1d10",
+            "dmgType": "P",
+            "property": [
+                "A",
+                "WCXH",
+                "WCXSKW",
+                "2H"
+            ],
+            "range": "200/800",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 139,
+                    "entries": [
+                        "The mobile artillery of the Middle Ages, the English longbow (which the longbow in this document is based upon) required incredible strength to use. During the Hundred Years' War, longbowmen rained volleys down on French knights at long range, embedding their heavy armor with arrows. This bow has a height roughly equal the user's, which gives it its enormous draw, power, and range. After the inventions of the crossbow, the massive longbow was supplanted everywhere in Europe except England, which continued its widespread archery tradition for centuries after others abandoned it."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Strength",
+                    "entries": [
+                        "You cannot make ranged attack rolls with a longbow if your Strength score is lower than 13."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Recurve Bow",
+            "source": "WCX-WR",
+            "page": 66,
+            "type": "R",
+            "weaponCategory": "martial",
+            "weapon": true,
+            "bow": true,
+            "ammoType": "arrow|WCX-WR",
+            "rarity": "none",
+            "value": 5000,
+            "weight": 1,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "property": [
+                "A",
+                "WCXSKW",
+                "2H"
+            ],
+            "range": "100/400",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 139,
+                    "entries": [
+                        "A recurve refers to a bow of any size whose arms curl forward at the ends, which delivers energy to the arrow more efficiently and allows for a stronger shot without additional draw weight. This construction technique allows users with less physical strength to use bows fo a larger size with greater ease and accuracy. In this document, however, this bow acts as an intermediate step between small shortbows and longbows (which had little to no forward curve), for bows of middling size. It occupies the same niche as the weapon formerly called a longbow in the base system does, while the longbow is an entirely new weapon."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Strength",
+                    "entries": [
+                        "You cannot make ranged attack rolls with a recurve bow if your Strength score is lower than 10."
+                    ]
+                }
+            ]
+        },
+        {
 			"name": "Barbed Quarrel",
 			"source": "WCX-WR",
 			"page": 68,
@@ -589,7 +1886,13 @@
 			"weight": 0.06,
 			"value": 15,
             "entries": [
-                "When you use barbed quarrels, your crossbow attacks gain the slicing property."
+                {
+                    "type": "entries",
+                    "name": "Ammunition Properties",
+                    "entries": [
+                        "When you use barbed quarrels, your crossbow attacks gain the slicing property."
+                    ]
+                }
             ]
 		},
         {
@@ -621,7 +1924,13 @@
 			"weight": 0.06,
 			"value": 30,
             "entries": [
-                "When you use bodkin arrows, your bow attacks gain the sundering property."
+                {
+                    "type": "entries",
+                    "name": "Ammunition Properties",
+                    "entries": [
+                        "When you use bodkin arrows, your bow attacks gain the sundering property."
+                    ]
+                }
             ]
 		},
         {
@@ -634,7 +1943,13 @@
 			"weight": 0.06,
 			"value": 50,
             "entries": [
-                "When you use broadhead arrows, your bow attacks deal slashing damage and gain the slicing property."
+                {
+                    "type": "entries",
+                    "name": "Ammunition Properties",
+                    "entries": [
+                        "When you use broadhead arrows, your bow attacks deal slashing damage and gain the slicing property."
+                    ]
+                }
             ]
 		},
         {
@@ -647,15 +1962,6 @@
 			"value": 30
 		},
         {
-			"name": "Atlatl Dart",
-			"source": "WCX-WR",
-			"page": 68,
-			"type": "A",
-			"rarity": "none",
-			"weight": 0.25,
-			"value": 5
-		},
-        {
 			"name": "Field Arrow",
 			"source": "WCX-WR",
 			"page": 68,
@@ -665,7 +1971,13 @@
 			"weight": 0.06,
 			"value": 5,
             "entries": [
-                "When you use field arrows, your bow attacks gain the nonlethal property."
+                {
+                    "type": "entries",
+                    "name": "Ammunition Properties",
+                    "entries": [
+                        "When you use field arrows, your bow attacks gain the nonlethal property."
+                    ]
+                }
             ]
 		},
         {
@@ -715,7 +2027,13 @@
 			"weight": 0.06,
 			"value": 2,
             "entries": [
-                "When you use hunting bolts, your crossbow attacks deal bludgeoning damage and gain the nonlethal property."
+                {
+                    "type": "entries",
+                    "name": "Ammunition Properties",
+                    "entries": [
+                        "When you use hunting bolts, your crossbow attacks deal bludgeoning damage and gain the nonlethal property."
+                    ]
+                }
             ]
 		},
         {
@@ -728,7 +2046,13 @@
 			"weight": 0.06,
 			"value": 5,
             "entries": [
-                "When you use quarrels, your crossbow attacks gain the staggering property."
+                {
+                    "type": "entries",
+                    "name": "Ammunition Properties",
+                    "entries": [
+                        "When you use quarrels, your crossbow attacks gain the staggering property."
+                    ]
+                }
             ]
 		},
         {
@@ -877,7 +2201,7 @@
                     "type": "entries",
                     "name": "Light",
                     "entries": [
-                        "These weapons are small and easy to handle, making them ideal for use in an off-hand or fighting with two weapons. See {@action two-weapon fighting|WCX-WR}"
+                        "These weapons are small and easy to handle, making them ideal for use in an off-hand or fighting with two weapons. See {@action two-weapon fighting|WCX-WR}."
                     ]
                 }
             ]
@@ -1066,7 +2390,7 @@
                     "type": "entries",
                     "name": "Versatile",
                     "entries": [
-                        "These weapons can be wielded in one or both hands. When you wield a versatile weapon in two hands, it gains an additional property and uses different damage dice, both listed in parentheses behind the versatile property on the weapons table. See {@action versatile fighting|WCX-WR}"
+                        "These weapons can be wielded in one or both hands. When you wield a versatile weapon in two hands, it gains an additional property and uses different damage dice, both listed in parentheses behind the versatile property on the weapons table. See {@action versatile fighting|WCX-WR}."
                     ]
                 }
             ]
@@ -1086,7 +2410,7 @@
             ]
         },
         {
-            "abbreviation": "WCXWNG",
+            "abbreviation": "WCXWNGD",
             "source": "WCX-WR",
             "page": 64,
             "entries": [
@@ -1112,8 +2436,8 @@
                 {
                     "type": "entries",
                     "entries": [
-                        "Effects such as a barbarian's {@classFeature Brutal Critical|Barbarian|9} or the {@optfeature Great Weapon Fighting} fighting style do not affect damage dice granted by properties such as finisher and wind-up, since bonus damage dice from properties are not weapon damage dice.",
-                        "For example, when a 9th-level barbarian lands a critical hit with a {@item greatsword|WCX-WR} against a {@condition prone} enemy, they roll {@damage 10d6} damage; 2d6 from the weapon, another 2d6 from finisher, which are both doubled by the critical hit, and a final 2d6 from {@classFeature Brutal Critical|Barbarian|9}. While finisher's dice are rolled again by the critical hit, they are not weapon damage dice that Brutal Critical adds once more.",
+                        "Effects such as a barbarian's {@classFeature Brutal Critical|Barbarian||9} or the {@optfeature Great Weapon Fighting} fighting style do not affect damage dice granted by properties such as finisher and wind-up, since bonus damage dice from properties are not weapon damage dice.",
+                        "For example, when a 9th-level barbarian lands a critical hit with a {@item greatsword|WCX-WR} against a {@condition prone} enemy, they roll {@damage 10d6} damage; 2d6 from the weapon, another 2d6 from finisher, which are both doubled by the critical hit, and a final 2d6 from {@classFeature Brutal Critical|Barbarian||9}. While finisher's dice are rolled again by the critical hit, they are not weapon damage dice that Brutal Critical adds once more.",
                         "Similarly, a fighter with the {@optfeature Great Weapon Fighting} style that strikes an enemy with a wound-up {@item pike|WCX-WR} can only reroll a 1 or 2 on the 1d10 rolled by the pike itself, not the remaining 2d10 granted by the wind-up property."
                     ]
                 }
