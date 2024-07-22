@@ -19,7 +19,7 @@
 		],
         "status": "wip",
 		"dateAdded": 0,
-		"dateLastModified": 1721601487,
+		"dateLastModified": 1721634541,
         "internalCopies": [
             "action",
             "itemProperty"
@@ -43,6 +43,20 @@
             "page": 87,
             "entries": [
                 "Once on your turn when you make a melee weapon attack or special melee attack such as a {@action grapple} or {@action shove} against a creature using one hand, you can make one additional attack using a melee weapon with the versatile property that you're holding in the other hand. You make the attack with one hand on the weapon, even if you still have a free hand. You cannot make this additional attack if you have already engaged in {@action two-weapon fighting|WCX-WR} in the same turn."
+            ],
+            "seeAlsoAction": [
+                "Attack"
+            ]
+        },
+        {
+            "name": "Shield Attacks",
+            "source": "WCX-WR",
+            "page": 67,
+            "entries": [
+                "When you could attack with a weapon, you can instead choose to bash with a shield. You add your proficiency bonus to the attack roll so long as you are proficient with the shield you use, and your Strength modifier to its damage.",
+                "Shields are not considered weapons, so you can still benefit from features like the {@optfeature Dueling Fighting Style} when attacking with a weapon while you have shield in the other hand. However, because the attack you make with a shield is a melee weapon attack, it can activate features that activate on weapon attacks, such as {@classFeature Divine Smite|paladin||2}.",
+                "A magical shield that grants a bonus to your AC when wielded only increases your Armor Class, and does not grant a bonus to attack and damage rolls with the shield unless its description states others.",
+                "If a magical shield applies it bonus to both AC and attack and damage rolls, its rarity increases by one level. For example, both a +3 weapon and a +3 shield are {@i very rare} items, but a {@item dueling shield|WCX-WR} that grants a +3 bonus to both AC and attack and damage rolls is a {@i legendary} item."
             ],
             "seeAlsoAction": [
                 "Attack"
@@ -1730,7 +1744,7 @@
 					"type": "entries",
 					"name": "Special",
 					"entries": [
-						"The atlatl benefits from skill with both ranged and thrown weapons, though it is considered a ranged weapon. You can use your Strength modifier to increase the range of darts hurled with this weapon, as though it had the thrown property, and it and its darts are considerted thrown weapons when used to make ranged attacks for the purposes of benefits such as the Thrown Weapon Fighting fighting style."
+						"The atlatl benefits from skill with both ranged and thrown weapons, though it is considered a ranged weapon. You can use your Strength modifier to increase the range of darts hurled with this weapon, as though it had the thrown property, and it and its darts are considerted thrown weapons when used to make ranged attacks for the purposes of benefits such as the {@optfeature Thrown Weapon Fighting} fighting style."
 					]
 				}
             ]
@@ -1881,6 +1895,638 @@
             ]
         },
         {
+            "name": "Chain Whip",
+            "source": "WCX-WR",
+            "page": 66,
+            "type": "M",
+            "weaponCategory": "exotic",
+            "weapon": true,
+            "rarity": "none",
+            "value": 500,
+            "weight": 10,
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "property": [
+                "WCXBY",
+                "WCXENS",
+                "WCXV"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 138,
+                    "entries": [
+                        "A weapon common to Chinese martial arts, made of metal rods linked by short lengths of chain. The statistics of this weapon also refer to lengths of spiked chain that might be used as an improvised or impractical, but certainly painful weapon."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a chain whip in two hands, it gains the reach property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Garotte Wire",
+            "source": "WCX-WR",
+            "page": 66,
+            "type": "M",
+            "weaponCategory": "exotic",
+            "weapon": true,
+            "rarity": "none",
+            "value": 500,
+            "weight": 0.25,
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "property": [
+                "F",
+                "WCXL",
+                "S",
+                "2H"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 139,
+                    "entries": [
+                        "Any length of cord, chain, rope, or wire used to strangle, often as an assassination weapon. Variations of this weapon have been used since the Roman empire, and were very popular during the 20th century.."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"A garotte cannot be used on a creature more than 1 size larger than you, and you can only attack with a garotte if you have advantage on attack rolls against the target.",
+                        "On a hit, the target is {@condition grappled} until you release it, it breaks free of the grapple, or you stop wielding the garotte. While grappled in this way, the target is {@condition restrained}, cannot speak or breathe, and {@quickref suffocating|PHB|2||suffocates}. Creatures that do not need to breathe are immune to a garotte wire's choke at the discretion of the DM.",
+                        "If you are grappling a creature, you can grip the wire with the same hand that you are using to grapple the target and attack it with a garotte wire that you are holding in the other hand, effectively ignoring the wire's two-handed property for that target."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Gauntlet-Sword",
+            "source": "WCX-WR",
+            "page": 66,
+            "type": "M",
+            "weaponCategory": "exotic",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 2500,
+            "weight": 4,
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "property": [
+                "WCXCAV",
+                "WCXL",
+                "S"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 138,
+                    "entries": [
+                        "Known as a dandpatta in Marathi and a pata in Hindi, this weapon attaches the blade of a sword to a gauntlet that encircles the hand and wrist. Used from both infantry and cavalry for cut-and-run attacks, this weapon was commonly used in tandem with another pata, a shield, or another one-handed weapon. While it existed in the 17th and 18th centures ratehr than the early Renaissance period the rest of this document emulates, the concept and design are too wonderful to omit."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"This specialized sword is built into a stiff gauntlet. You cannot drop or be disarmed of a gauntlet-sword. It takes an action to don or doff a gauntlet-sword."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Hooksword",
+            "source": "WCX-WR",
+            "page": 66,
+            "type": "M",
+            "weaponCategory": "exotic",
+            "weapon": true,
+            "sword": true,
+            "rarity": "none",
+            "value": 3500,
+            "weight": 3,
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "property": [
+                "WCXENS",
+                "WCXP",
+                "S"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 138,
+                    "entries": [
+                        "A weapon used in Chinese martial arts, these swords have a shephard's-crook-like hook at the end of the blade used to trap or catch enemy weapons. These weapons are often used in pairs."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"If you are holding a hooksword in each hand, checks from the weapon's ensnaring property are made with advantage, and the ability to link both hookswords together gives this weapon the sweeping property."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Trident",
+            "source": "WCX-WR",
+            "page": 66,
+            "type": "M",
+            "weaponCategory": "exotic",
+            "weapon": true,
+            "rarity": "none",
+            "value": 500,
+            "weight": 4,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "dmg2": "2d4",
+            "property": [
+                "WCXFNSH",
+                "WCXV",
+                "WCXWNGD"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 134,
+                    "entries": [
+                        "A three-pronged spear used in fishing and in gladiator combat by retiarius-style fighter. Famously wielded by Poseidon, the Greek god of the sea."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a trident in two hands, it gains the skewering property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Whip",
+            "source": "WCX-WR",
+            "page": 66,
+            "type": "M",
+            "weaponCategory": "exotic",
+            "weapon": true,
+            "rarity": "none",
+            "value": 200,
+            "weight": 3,
+            "dmg1": "1d4",
+            "dmgType": "S",
+            "property": [
+                "WCXENS",
+                "F",
+                "WCXR"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 139,
+                    "entries": [
+                        "A flexible weapon, often made of lengths of braided leather coiled up when not in use. Providing long reach and often making a loud noise, whips are used on both animals and people to inflict pain and ensure obedience. Dextrous whip use also lets the user disarm or trip their enemies, making it effective for nonlethal solutions."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Arquebus",
+            "source": "WCX-WR",
+            "page": 67,
+            "type": "R",
+            "weaponCategory": "exotic",
+            "weapon": true,
+            "firearm": true,
+            "ammoType": "bullet|WCX-WR",
+            "rarity": "none",
+            "value": 40000,
+            "weight": 10,
+            "dmg1": "2d8",
+            "dmgType": "P",
+            "property": [
+                "AF",
+                "WCXGUN",
+                "2H"
+            ],
+            "range": "60/120",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 140,
+                    "entries": [
+                        "A two-handed firearm with a superficial resemblance to a musket, though with a more primitive firing mechanism and a smaller bore. First appearing in the Ottoman empire, the pre-matchlock versions of these weapons were steadied on walls or tripods, but the trigger allowed them to be used as handheld weapons."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Boomerang",
+            "source": "WCX-WR",
+            "page": 67,
+            "type": "R",
+            "weaponCategory": "exotic",
+            "weapon": true,
+            "rarity": "none",
+            "value": 2500,
+            "weight": 1,
+            "dmg1": "1d4",
+            "dmgType": "B",
+            "property": [
+                "F",
+                "WCXNL",
+                "S",
+                "WCXT"
+            ],
+            "range": "30/60",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 141,
+                    "entries": [
+                        "A specially-shaped piece of wood used for hunting and warfare that, when thrown properly, returns to the user's hand rather than continuing onward."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Strength",
+                    "entries": [
+                        "You cannot make ranged attack rolls with a boomerang if your Strength score is lower than 9."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"This weapon returns to your hand if you miss."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Greatbow",
+            "source": "WCX-WR",
+            "page": 67,
+            "type": "R",
+            "weaponCategory": "exotic",
+            "weapon": true,
+            "bow": true,
+            "ammoType": "arrow|phb",
+            "rarity": "none",
+            "value": 20000,
+            "weight": 10,
+            "dmg1": "2d6",
+            "dmgType": "P",
+            "property": [
+                "A",
+                "WCXH",
+                "LD",
+                "S",
+                "2H"
+            ],
+            "range": "150/600",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 140,
+                    "entries": [
+                        "A massive fictional bow used by creatures of enormous strength, such as giants, the archers of Anor Londo, or Odysseus of Ithaca. This bow dwarfs its user, and has a draw weight so great that most archers could never hope to use it."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Strength",
+                    "entries": [
+                        "You cannot make ranged attack rolls with a greatbow if your Strength score is lower than 188."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"An enormous bow with massive draw weight, you must use Strength instead of Dexterity for attack and damage rolls with this weapon."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Handgonne",
+            "source": "WCX-WR",
+            "page": 67,
+            "type": "R",
+            "weaponCategory": "exotic",
+            "weapon": true,
+            "firearm": true,
+            "ammoType": "bullet|WCX-WR",
+            "rarity": "none",
+            "value": 25000,
+            "weight": 4,
+            "dmg1": "2d6",
+            "dmgType": "P",
+            "property": [
+                "AF",
+                "WCXGUN"
+            ],
+            "range": "30/90",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 140,
+                    "entries": [
+                        "A general term for any gunpowder weapon held in both hands (compared to a bombard or cannon) or, later, in one hand. WCX refers to the pistol-like matchlock weapons that appear in museums dated in the late 1400s to mid-1500s."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Net",
+            "source": "WCX-WR",
+            "page": 67,
+            "type": "R",
+            "weaponCategory": "exotic",
+            "weapon": true,
+            "rarity": "none",
+            "value": 100,
+            "weight": 1,
+            "property": [
+                "WCXENS",
+                "S",
+                "WCXT"
+            ],
+            "range": "5/15",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 140,
+                    "entries": [
+                        "A series of cords knotted into a mesh that ensnares and entraps enemies. Popularly wielded by gladiators, this weapon sees use among hunters, trappers, and fishermen."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"A Large or smaller creature hit by a net is {@condition restrained} until freed. A net has no effect on creatures that are formless, or are Huge or larger. A creature can free itself or others by using its action and succeeding on a 10 Strength check. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, and destroys the net."
+					]
+				}
+            ]
+        },
+        {
+			"name": "Buckler",
+			"source": "WCX-WR",
+			"page": 67,
+			"type": "S",
+			"rarity": "none",
+			"weight": 2,
+			"value": 800,
+			"ac": 1,
+            "dmg1": "1d4",
+            "dmgType": "B",
+            "property": [
+                "WCXHNDL",
+                "WCXP"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 141,
+                    "entries": [
+                        "A small, round shield made entirely of metal, with a large bulge (or boss) in the center used to parry attacks. Commonly used in fencing."
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Heater Shield",
+			"source": "WCX-WR",
+			"page": 67,
+			"type": "S",
+			"rarity": "none",
+			"weight": 3,
+			"value": 1000,
+			"ac": 2,
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "property": [
+                "WCXSTRP"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 141,
+                    "entries": [
+                        "A generalist shield that evolved from the kite shield, which can be used when mounted or on foot. Light, inexpensive, and effective from the waist up, heater shields often displayed the heraldry of the warrior wielding them on their colorful faces."
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Kite Shield",
+			"source": "WCX-WR",
+			"page": 67,
+			"type": "S",
+			"rarity": "none",
+			"weight": 9,
+			"value": 1500,
+			"ac": 2,
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "property": [
+                "WCXSTRP",
+                "S"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 141,
+                    "entries": [
+						"A teardrop-shaped wooden shield wielded by both footmen and mounted soldiers but specialized for horseback, the tapering shape of this shield makes it perfect for defending both horse and ride. Common in the Early Middle Ages, and made famous for their use of the Normal conquest of Britain as depicted on the Bayeux Tapestry.."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"If you wield this shield while mounted, its long, tapering bottom grants both you and your mount a +1 bonus to AC against attacks."
+					]
+				}
+            ]
+		},
+        {
+			"name": "Pavise Shield",
+			"source": "WCX-WR",
+			"page": 67,
+			"type": "S",
+			"rarity": "none",
+			"weight": 16,
+			"value": 2500,
+			"ac": 2,
+            "dmg1": "1d4",
+            "dmgType": "B",
+            "property": [
+                "WCXH",
+                "WCXHNDL",
+                "S"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 142,
+                    "entries": [
+                        "A tall shield made of wood used by crossbowmen, who carried it to serve as portable cover. A large spike in its bottom allowed its user to plant it in the ground to shield them while they ducked behind it to winch a crossbow."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"A pavise is a tall, oblong shield used to provide portable cover. You can use your action to plant a pavise in the ground, doffing it as part of the same action. In this state it is no longer wielded, and stands on its own to act as {@quickref cover|PHB|3||half cover} for an upright creature, or total cover for a {@condition prone} one."
+					]
+				}
+            ]
+		},
+        {
+			"name": "Roundshield",
+			"source": "WCX-WR",
+			"page": 67,
+			"type": "S",
+			"rarity": "none",
+			"weight": 3,
+			"value": 1000,
+			"ac": 2,
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "property": [
+                "WCXHNDL"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 142,
+                    "entries": [
+                        "A circular one-handed shield, made of wood or metal with a circular boss in the center. This shield can be used to represent any circular shield that cannot reasonably fit into any other category."
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Tower Shield",
+			"source": "WCX-WR",
+			"page": 67,
+			"type": "S",
+			"rarity": "none",
+			"weight": 16,
+			"value": 5000,
+			"ac": 3,
+            "dmg1": "1d4",
+            "dmgType": "B",
+            "property": [
+                "WCXH",
+                "WCXSTRP",
+                "S"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 142,
+                    "entries": [
+                        "A tall shield, typically rectangular, capable of covering most or all of the user's body, giving them extra cover against attacks."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"While wielding a tower shield, you can use your reaction to gain {@quickref cover|PHB|3||three-quarters cover} against harmful area-of-effects such as breath weapons or spells when targeted or affected by such effects, unless the effect travels around corners."
+					]
+				}
+            ]
+		},
+        {
+			"name": "Dueling Shield",
+			"source": "WCX-WR",
+			"page": 67,
+			"type": "S",
+            "weaponCategory": "exotic",
+			"rarity": "none",
+			"weight": 6,
+			"value": 7500,
+			"ac": 2,
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "property": [
+                "WCXHNDL",
+                "WCXV",
+                "S"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 142,
+                    "entries": [
+                        "Also called a long shield, this shield often featured a large triangular boss in the middle for bashing enemies along with a set of blades, spikes, and hooks to give extra versatility. It was used both alone and as a weapon in its own right."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile (additional properties)",
+                    "entries": [
+                        "When you wield a dueling shield in two hands, it gains the ensnaring, heavy, and parry properties, and your shield attacks deal piercing damage."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"These large shields have a large triangular boss and hooks and blades built into the rim. A dueling shield adds a +2 bonus to AC when wielded in one hand, as normal. When wielded in both hands, it acts as a melee weapon that deals {@dice 1d8} piercing damage with the ensnaring, heavy, and parry properties in addition to its AC bonus."
+					]
+				}
+            ]
+		},
+        {
+			"name": "Lantern Shield",
+			"source": "WCX-WR",
+			"page": 67,
+			"type": "S",
+            "weaponCategory": "exotic",
+			"rarity": "none",
+			"weight": 6,
+			"value": 10000,
+			"ac": 2,
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "property": [
+                "WCXL",
+                "WCXSTRP",
+                "S"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "Popular during the Italian Renaissance in the 1500s and 1600s and used for nighttime duels, this specialized buckler fits an entire lantern and integrates a gauntlet and blades into its construction."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"An apparatus containing a small shield, lantern, a gauntlet, and several blades. When wielded, it adds a +2 bonus to your AC like a normal shield, is considered a weapon with the light property for effects such as {@action two-weapon fighting|WCX-WR}, and can store a lit {@item bullseye lantern|PHB}, which you wield while holding this shield. If you are disarmed of this shield or doff it, the lantern moves with it. A lantern can be added or removed from the shield as an action."
+					]
+				}
+            ]
+		},
+        {
 			"name": "Barbed Quarrel",
 			"source": "WCX-WR",
 			"page": 68,
@@ -1890,6 +2536,13 @@
 			"weight": 0.0625,
 			"value": 15,
             "entries": [
+                {
+                    "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "A bolt fired from a crossbow with rearward spines or barbs that cause additional damage to the target's flesh when removed."
+                    ]
+                },
                 {
                     "type": "entries",
                     "name": "Ammunition Properties",
@@ -1909,6 +2562,13 @@
 			"weight": 0.0625,
 			"value": 2,
             "entries": [
+                {
+                    "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "Miniscule spiked darts propelled by the user's breath from a blowgun. Tiny, silent, and often coated with poison to stealthily assassinate targets."
+                    ]
+                },
                 {
 					"type": "entries",
 					"name": "Special",
@@ -1930,6 +2590,13 @@
             "entries": [
                 {
                     "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "An arrowhead with a straight spike used against armored targets and reportedly capable of piercing maille and plate. More common than broadheads."
+                    ]
+                },
+                {
+                    "type": "entries",
                     "name": "Ammunition Properties",
                     "entries": [
                         "When you use bodkin arrows, your bow attacks gain the sundering property."
@@ -1938,7 +2605,7 @@
             ]
 		},
         {
-			"name": "Broadhead",
+			"name": "Broadhead Arrow",
 			"source": "WCX-WR",
 			"page": 68,
 			"type": "A",
@@ -1947,6 +2614,13 @@
 			"weight": 0.0625,
 			"value": 50,
             "entries": [
+                {
+                    "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "A steel arrowhead employed against lighter-armored targets, capable of causing large wounds with its multiple blades."
+                    ]
+                },
                 {
                     "type": "entries",
                     "name": "Ammunition Properties",
@@ -1963,7 +2637,16 @@
 			"type": "AF",
 			"rarity": "none",
 			"weight": 0.01,
-			"value": 30
+			"value": 30,
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "The ammunition fired by guns—a round, unrifled sphere made of lead. Individual arquebusiers often trimmed their bullets to fit their guns, or even made their own bullets."
+                    ]
+                }
+            ]
 		},
         {
 			"name": "Field Arrow",
@@ -1975,6 +2658,13 @@
 			"weight": 0.0625,
 			"value": 5,
             "entries": [
+                {
+                    "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "These cheap arrows mimic the flight of harder-headed arrows, and can be used against practice targets with minimal penetration."
+                    ]
+                },
                 {
                     "type": "entries",
                     "name": "Ammunition Properties",
@@ -1995,6 +2685,13 @@
 			"value": 100,
             "entries": [
                 {
+                    "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "Rare iron-headed arrows which contain a burning coal, used for signal lighting and to set fires over fortifications."
+                    ]
+                },
+                {
 					"type": "entries",
 					"name": "Special",
 					"entries": [
@@ -2012,6 +2709,13 @@
 			"weight": 0.2,
 			"value": 1000,
             "entries": [
+                {
+                    "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "Rather than a single bullet, this cartridge contains many small lead spheres, allowing the shooter to hit smaller, moving targets more easily."
+                    ]
+                },
                 {
 					"type": "entries",
 					"name": "Special",
@@ -2033,6 +2737,13 @@
             "entries": [
                 {
                     "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "A less-lethal piece of crossbow ammunition, designed to bruise and stun the target rather than pierce and cut the flesh, avoiding damage to valuable meat."
+                    ]
+                },
+                {
+                    "type": "entries",
                     "name": "Ammunition Properties",
                     "entries": [
                         "When you use hunting bolts, your crossbow attacks deal bludgeoning damage and gain the nonlethal property."
@@ -2052,6 +2763,13 @@
             "entries": [
                 {
                     "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "The darts fired by crossbows, with a variety of characteristics depending on specialization. Tend to be shorter and thicker than arrows."
+                    ]
+                },
+                {
+                    "type": "entries",
                     "name": "Ammunition Properties",
                     "entries": [
                         "When you use quarrels, your crossbow attacks gain the staggering property."
@@ -2067,7 +2785,16 @@
 			"bulletSling": true,
 			"rarity": "none",
 			"weight": 0.0625,
-			"value": 0.2
+			"value": 0.2,
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "Any small stone or piece of metal aerodynamic enough to be fitted into a sling. One of the easiest pieces of ammunition to find, often picked up from the ground in the heat of the moment."
+                    ]
+                }
+            ]
 		},
         {
 			"name": "Silver Bullet",
@@ -2105,7 +2832,301 @@
                     ]
 				}
             ]
-		}
+		},
+        {
+            "name": "Leather Armor",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "LA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 8,
+            "value": 500,
+            "ac": 11,
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "This flexible armor made from tanned animal hides offers basic protection against glancing blows, but cannot endure extended punishment."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gambeson",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "LA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 10,
+            "value": 1000,
+            "ac": 12,
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 143,
+                    "entries": [
+                        "Armor made from layers of quilted cloth. Warm, thick, and flexible. Thinner gambesons are worn beneath other armor to act as padding, and thicker variants make excellent armor. Often worn by peasants, mercenaries, and other groups on a budget."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Jackchains",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "LA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 15,
+            "value": 2500,
+            "ac": 13,
+            "stealth": true,
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 144,
+                    "entries": [
+                        "A gambeson with chains or space plates along the arms and shoulders to provide additional protection."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hide Armor",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "MA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 12,
+            "value": 1000,
+            "ac": 13,
+            "dexterityMax": 3,
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 144,
+                    "entries": [
+                        "Thick, heavy clothing made of furs and skins. It can take a variety of shapes and designs, and often features the patterns and construction techniques of the culture which created it."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Haubergeon",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "MA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 20,
+            "value": 5000,
+            "ac": 14,
+            "dexterityMax": 2,
+            "stealth": true,
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 144,
+                    "entries": [
+                        "A shorter version of the thigh-length hauberk, this ringed shirt of maille covered most of the arms, but did not include maille gloves."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Breastplate",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "MA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 20,
+            "value": 20000,
+            "ac": 14,
+            "dexterityMax": 3,
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 144,
+                    "entries": [
+                        "A metal plate that covers the front of the torso, covering the vitals but leaving the vulnerable back open, allowing for flexibility and speed."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Brigandine",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "MA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 25,
+            "value": 10000,
+            "ac": 15,
+            "dexterityMax": 2,
+            "stealth": true,
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 144,
+                    "entries": [
+                        "Often confused for studded leather (which never existed), this armor is a cloth top with metal sheets riveted to the interior to create a shell around the user. Also called a coat of plates."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cuirass",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "MA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 25,
+            "value": 40000,
+            "ac": 15,
+            "dexterityMax": 3,
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 144,
+                    "entries": [
+                        "A breastplate with matching backplate and helmet. The perfect combination of budget manufacturing, weight, and protection which persisted after the Renaissance, lingered through the nineteenth century, and only truly vanished in the early years of the first World War."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Half-plate",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "MA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 30,
+            "value": 100000,
+            "ac": 16,
+            "dexterityMax": 2,
+            "stealth": true,
+            "property": [
+                "WCXDR1"
+            ],
+            "strength": "12",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 144,
+                    "entries": [
+                        "Budget plate armor that covers the torso, head, and upper limbs, but not the extremities. Often manufactured in vast quantities, since those parts require little tailoring."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Scale Armor",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "HA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 40,
+            "value": 10000,
+            "ac": 15,
+            "stealth": true,
+            "property": [
+                "WCXDR1"
+            ],
+            "strength": "12",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 144,
+                    "entries": [
+                        "A full-body harness that used overlapping metal scales instead of interlocking rings. Famous for its use in the Middle East and the empires that spanned it, leading to its adoption in Greece and Eastern Europe."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hauberk",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "HA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 30,
+            "value": 15000,
+            "ac": 16,
+            "stealth": true,
+            "property": [
+                "WCXDR1"
+            ],
+            "strength": "13",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 144,
+                    "entries": [
+                        "Armor made of interlocking rings that covers the torso, arms, and thighs, and often the head, used through the Early Middle Ages and Crusades, and to fill the gaps in plate during the later Middle Ages."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Splint Armor",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "HA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 35,
+            "value": 30000,
+            "ac": 17,
+            "stealth": true,
+            "property": [
+                "WCXDR1"
+            ],
+            "strength": "14",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 145,
+                    "entries": [
+                        "Budget plate with the arms and legs covered by leather with metal plates riveted to the outside, to substitute for a full suit to reduce manufacturing time and material cost."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Full Plate",
+            "source": "WCX-WR",
+            "page": 70,
+            "type": "HA",
+            "armor": true,
+            "rarity": "none",
+            "weight": 45,
+            "value": 150000,
+            "ac": 18,
+            "stealth": true,
+            "property": [
+                "WCXDR2"
+            ],
+            "strength": "14",
+            "entries": [
+                {
+                    "type": "entries",
+                    "page": 144,
+                    "entries": [
+                        "Fitted, customized armor that covered the body from head to toe in shaped metal sheets, with maille to fill in gaps and padded gambeson worn underneath. Virtually impenetrable by most cutting and piercing weapons and immensely expensive."
+                    ]
+                }
+            ]
+        }
     ],
 
     "itemProperty": [
@@ -2415,8 +3436,67 @@
                     ]
                 }
             ]
+        },
+        {
+            "abbreviation": "WCXHNDL",
+            "source": "WCX-WR",
+            "page": 67,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Grip (Handle)",
+                    "entries": [
+                        "Handles are a wood or metal handlebar on the inside of a shield. These shields can be doffed or donned with the item interaction you receive as part of your turn and can be dropped freely, but enemies have advantage on checks made to {@action disarm|DMG} you of them."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXSTRP",
+            "source": "WCX-WR",
+            "page": 67,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Grip (Strap)",
+                    "entries": [
+                        "Straps attach the shield to the arms, reinforcing the handle with a series of cloth or leather straps. These shields take an action to don or doff, and enemies have disadvantage on checks made to {@action disarm|DMG} you of the shield."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXDR1",
+            "source": "WCX-WR",
+            "page": 70,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Damage Reduction (Half)",
+                    "entries": [
+                        "When you take nonmagical bludgeoning, piercing, or slashing damage, the damage you take is reduced by an amount equal to half your proficiency bonus, rounded down. This reduction applies before you apply resistances or vulnerabilities.",
+                        "Any attack that is considered magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage ignores this damage reduction as well, unless the armor you wear is also magical."
+                    ]
+                }
+            ]
+        },
+        {
+            "abbreviation": "WCXDR2",
+            "source": "WCX-WR",
+            "page": 70,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Damage Reduction (Full)",
+                    "entries": [
+                        "When you take nonmagical bludgeoning, piercing, or slashing damage, the damage you take is reduced by an amount equal to proficiency bonus. This reduction applies before you apply resistances or vulnerabilities.",
+                        "Any attack that is considered magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage ignores this damage reduction as well, unless the armor you wear is also magical."
+                    ]
+                }
+            ]
         }
     ],
+
     "variantrule": [
         {
             "name": "Property Damage Dice",
@@ -2426,9 +3506,23 @@
                 {
                     "type": "entries",
                     "entries": [
-                        "Effects such as a barbarian's {@classFeature Brutal Critical|Barbarian||9} or the {@optfeature Great Weapon Fighting} fighting style do not affect damage dice granted by properties such as finisher and wind-up, since bonus damage dice from properties are not weapon damage dice.",
-                        "For example, when a 9th-level barbarian lands a critical hit with a {@item greatsword|WCX-WR} against a {@condition prone} enemy, they roll {@damage 10d6} damage; 2d6 from the weapon, another 2d6 from finisher, which are both doubled by the critical hit, and a final 2d6 from {@classFeature Brutal Critical|Barbarian||9}. While finisher's dice are rolled again by the critical hit, they are not weapon damage dice that Brutal Critical adds once more.",
+                        "Effects such as a barbarian's {@classFeature Brutal Critical (1 Die)|Barbarian||9||Brutal Critical} or the {@optfeature Great Weapon Fighting} fighting style do not affect damage dice granted by properties such as finisher and wind-up, since bonus damage dice from properties are not weapon damage dice.",
+                        "For example, when a 9th-level barbarian lands a critical hit with a {@item greatsword|WCX-WR} against a {@condition prone} enemy, they roll {@damage 10d6} damage; 2d6 from the weapon, another 2d6 from finisher, which are both doubled by the critical hit, and a final 2d6 from {@classFeature Brutal Critical (1 Die)|Barbarian||9||Brutal Critical}. While finisher's dice are rolled again by the critical hit, they are not weapon damage dice that Brutal Critical adds once more.",
                         "Similarly, a fighter with the {@optfeature Great Weapon Fighting} style that strikes an enemy with a wound-up {@item pike|WCX-WR} can only reroll a 1 or 2 on the 1d10 rolled by the pike itself, not the remaining 2d10 granted by the wind-up property."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Exotic Weapons",
+            "source": "WCX-WR",
+            "page": 66,
+            "entries": [
+                {
+                    "type": "entries",
+                    "entries": [
+                        "Exotic weapons are unwieldy, niche, novel, or revolutionary. Some are less effective weapons than popularly imagined or were designed for as tools used outside of combat, and so require expertise to use in combat with the same effectiveness as other, more efficient weapons. However, because they are still weapons, they work in the same way as simple or martial weapons whenever a class feature, spell, or other game mechanic requires one.",
+                        "During character creation, if you gain proficiency in all simple and martial weapons, you also gain proficiency in one exotic weapon or shield of your choice. A {@class monk} gains proficiency in two exotic weapons of your choice. {@quickref Multiclassing} into a class, other than monk, does not grant additional exotic proficiencies. You can also gain proficiency in an exotic weapon from other race, class, or background features, training, or by taking the {@feat Weapon Master} feat."
                     ]
                 }
             ]
