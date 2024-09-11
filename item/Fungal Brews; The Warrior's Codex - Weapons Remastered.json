@@ -19,7 +19,7 @@
 		],
         "status": "wip",
 		"dateAdded": 0,
-		"dateLastModified": 1721634541,
+		"dateLastModified": 1726086256,
         "internalCopies": [
             "action",
             "itemProperty"
@@ -2253,6 +2253,7 @@
             "type": "R",
             "weaponCategory": "exotic",
             "weapon": true,
+            "net": true,
             "rarity": "none",
             "value": 100,
             "weight": 1,
@@ -2348,7 +2349,7 @@
                     "type": "entries",
                     "page": 141,
                     "entries": [
-						"A teardrop-shaped wooden shield wielded by both footmen and mounted soldiers but specialized for horseback, the tapering shape of this shield makes it perfect for defending both horse and ride. Common in the Early Middle Ages, and made famous for their use of the Normal conquest of Britain as depicted on the Bayeux Tapestry.."
+						"A teardrop-shaped wooden shield wielded by both footmen and mounted soldiers but specialized for horseback, the tapering shape of this shield makes it perfect for defending both horse and ride. Common in the Early Middle Ages, and made famous for their use of the Normal conquest of Britain as depicted on the Bayeux Tapestry."
                     ]
                 },
                 {
@@ -3494,6 +3495,1256 @@
                     ]
                 }
             ]
+        },
+        {
+            "abbreviation": "WCXBLNT",
+            "source": "WCX-WR",
+            "page": 76,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Blunted",
+                    "entries": [
+                        "This weapon can only deal bludgeoning damage and also gains the nonlethal property. When you roll the highest number on a damage die, you must reroll the die and take the second roll."
+                    ]
+                }
+            ]
+        }
+    ],
+
+    "magicvariant": [
+        {
+            "name": "Adamantine Armor (WCX)",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "MA",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "HA",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "name": "Hide Armor"
+            },
+            "entries": [
+                "Adamantine is an ultra-hard jet-black metal with a multicolored sheen. When wearing adamantine armor, any critical hit against you not from an adamantine weapon becomes a normal hit.",
+                "An adamantine item costs 500 gp more than the normal version, whether the item is made of the metal or coated with it."
+            ],
+            "inherits": {
+                "namePrefix": "Adamantine ",
+                "source": "WCX-WR",
+                "page": 73,
+                "tier": "major",
+                "rarity": "uncommon",
+                "entries": [
+                    "This suit of armor is reinforced with adamantine, an ultra-hard jet-black metal with a multicolored sheen. When wearing adamantine armor, any critical hit against you not from an adamantine weapon becomes a normal hit."
+                ]
+            }
+        },
+        {
+            "name": "Adamantine Shield (WCX)",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "S",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Adamantine is an ultra-hard jet-black metal with a multicolored sheen. When wielding an adamantine shield, any critical hit against you not from an adamantine weapon becomes a normal hit.",
+                "An adamantine item costs 500 gp more than the normal version, whether the item is made of the metal or coated with it."
+            ],
+            "inherits": {
+                "namePrefix": "Adamantine ",
+                "source": "WCX-WR",
+                "page": 73,
+                "tier": "major",
+                "rarity": "uncommon",
+                "valueExpression": "[[baseItem.value]] + 50000",
+                "entries": [
+                    "This shield is reinforced with adamantine, an ultra-hard jet-black metal with a multicolored sheen. When wielding an adamantine shield, any critical hit against you not from an adamantine weapon becomes a normal hit."
+                ]
+            }
+        },
+        {
+            "name": "Adamantine Weapon (WCX)",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Adamantine is an ultra-hard jet-black metal with a multicolored sheen. When you hit an object with an adamantine weapon, the hit is a critical hit.",
+                "All adamantine melee weapons have the sundering property, and affect all types of wearable armor. If a creature attempts to parry an attack you made with an adamantine melee weapon and your attack hits in spite of the attempt, both the target and the parrying weapon or shield take damage from the attack.",
+                "An adamantine item costs 500 gp more than the normal version, whether the item is made of the metal or coated with it."
+            ],
+            "inherits": {
+                "namePrefix": "Adamantine ",
+                "source": "WCX-WR",
+                "page": 73,
+                "tier": "major",
+                "rarity": "rare",
+                "valueExpression": "[[baseItem.value]] + 50000",
+                "entries": [
+                    "Whenever you hit an object with this weapon, the hit is a critical hit.",
+                    "This weapon is made of, or coated with adamantine, an ultra-hard jet-black metal with a multicolored sheen. All adamantine melee weapons have the sundering property, and affect all types of wearable armor. If a creature attempts to parry an attack you made with an adamantine melee weapon and your attack hits in spite of the attempt, both the target and the parrying weapon or shield take daamge from the attack."
+                ]
+            }
+        },
+        {
+            "name": "Adamantine Ammunition (WCX)",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "AF",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Adamantine is an ultra-hard jet-black metal with a multicolored sheen. When you hit an object with an adamantine weapon, the hit is a critical hit.",
+                "Ten pieces of adamantine ammunition cost 500 gp more than the normal version, whether the item is made of the metal or coated with it."
+            ],
+            "inherits": {
+                "namePrefix": "Adamantine ",
+                "source": "WCX-WR",
+                "page": 73,
+                "tier": "minor",
+                "rarity": "rare",
+                "entries": [
+					"Whenever you hit an object using this ammunition, the hit is a critical hit.",
+                    "This ammunition is made of, or coated with adamantine, an ultra-hard jet-black metal with a multicolored sheen."
+                ]
+            }
+        },
+        {
+            "name": "Adamantite Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Adamantite is a rare material created when Underdark Faerzress corrupts adamantine deposits. Used extensively by drow, this material has all the properties of adamantine, but also temporarily absorbs poison into itself. When you apply an injury poison to an adamantite weapon or piece of ammunition, the poison isn't removed after the first injury, but is instead applied every time you deal piercing or slashing damage to a creature until the poison dries nautrally.",
+                "When you hit an object with an adamantite weapon, the hit is a critical hit.",
+                "All adamantite melee weapons have the sundering property, and affect all types of wearable armor. If a creature attempts to parry an attack you made with an adamantite melee weapon and your attack hits in spite of the attempt, both the target and the parrying weapon or shield take damage from the attack.",
+                "When exposed to direct sunlight, adamantite items disintegrate."
+            ],
+            "inherits": {
+                "namePrefix": "Adamantite ",
+                "source": "WCX-WR",
+                "page": 73,
+                "tier": "major",
+                "rarity": "rare",
+                "entries": [
+                    "Whenever you hit an object with this weapon, the hit is a critical hit.",
+                    "When you apply an injury poison to an adamantite weapon or piece of ammunition, the poison isn't removed after the first injury, but is instead applied every time you deal piercing or slashing damage to a creature until the poison dries nautrally.",
+                    "This weapon is made of, or coated with adamantite, a rare material created when Underdark Faezress corrupts adamantine deposits. All adamantite melee weapons have the sundering property, and affect all types of wearable armor. If a creature attempts to parry an attack you made with an adamantite melee weapon and your attack hits in spite of the attempt, both the target and the parrying weapon or shield take daamge from the attack.",
+                    "When exposed to direct sunlight, adamantite items disintegrate."
+                ]
+            }
+        },
+        {
+            "name": "Adamantite Ammunition",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "AF",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Adamantite is a rare material created when Underdark Faerzress corrupts adamantine deposits. Used extensively by drow, this material has all the properties of adamantine, but also temporarily absorbs poison into itself. When you apply an injury poison to an adamantite weapon or piece of ammunition, the poison isn't removed after the first injury, but is instead applied every time you deal piercing or slashing damage to a creature until the poison dries nautrally.",
+                "When you hit an object with a piece of adamantite ammunition, the hit is a critical hit.",
+                "When exposed to direct sunlight, adamantite items disintegrate."
+            ],
+            "inherits": {
+                "namePrefix": "Adamantite ",
+                "source": "WCX-WR",
+                "page": 73,
+                "tier": "minor",
+                "rarity": "rare",
+                "entries": [
+                    "Whenever you hit an object using this ammunition, the hit is a critical hit.",
+                    "When you apply an injury poison to an adamantite weapon or piece of ammunition, the poison isn't removed after the first injury, but is instead applied every time you deal piercing or slashing damage to a creature until the poison dries nautrally.",
+                    "This ammunition is made of, or coated with adamantine, an ultra-hard jet-black metal with a multicolored sheen.",
+                    "When exposed to direct sunlight, adamantite items disintegrate."
+                ]
+            }
+        },
+        {
+            "name": "Bone Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "weapon": true,
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "firearm": true,
+                "net": true
+            },
+            "entries": [
+                "A strong, off-white material scavenged from animal, monster, or humanoid corpses which is carved or cut into useful shapes. Used in areas without access to wood or metal, items made of this inflexible material are as durable as their standard version, but weigh half as much and have triple the cost."
+            ],
+            "inherits": {
+                "namePrefix": "Bone ",
+                "source": "WCX-WR",
+                "page": 73,
+                "tier": "minor",
+                "rarity": "unknown",
+                "valueMult": 3,
+                "valueExpression": "[[baseItem.value]] * 3",
+                "weightMult": 0.5,
+                "weightExpression": "[[baseItem.weight]] / 2",
+                "entries": [
+                    "This weapon is made of bone, a strong off-white material scavenged from corpses which is carved or cut into useful shapes. Items made of this inflexible material are as durable as their standard version, but weigh half as much and have triple the cost."
+                ]
+            }
+        },
+        {
+            "name": "Bone Ammunition",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "A strong, off-white material scavenged from animal, monster, or humanoid corpses which is carved or cut into useful shapes. Used in areas without access to wood or metal, items made of this inflexible material are as durable as their standard version, but weigh half as much and have triple the cost."
+            ],
+            "inherits": {
+                "namePrefix": "Bone ",
+                "source": "WCX-WR",
+                "page": 73,
+                "tier": "minor",
+                "rarity": "unknown",
+                "valueMult": 3,
+                "valueExpression": "[[baseItem.value]] * 3",
+                "weightMult": 0.5,
+                "weightExpression": "[[baseItem.weight]] / 2",
+                "entries": [
+                    "This ammunition is made of bone, a strong off-white material scavenged from corpses which is carved or cut into useful shapes. Items made of this inflexible material are as durable as their standard version, but weigh half as much and have triple the cost."
+                ]
+            }
+        },
+        {
+            "name": "Bone Armor",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "MA",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "HA",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "name": [
+                    "Hide Armor",
+                    "Haubergeon",
+                    "Hauberk"
+                ]
+            },
+            "entries": [
+                "A strong, off-white material scavenged from animal, monster, or humanoid corpses which is carved or cut into useful shapes. Used in areas without access to wood or metal, items made of this inflexible material are as durable as their standard version, but weigh half as much and have triple the cost.",
+                "Wearing armor made from bone (an incredibly rare item thanks to bones' inflexibility and inconsistent quality) grants you advantage on saving throws against necromancy spells."
+            ],
+            "inherits": {
+                "namePrefix": "Bone ",
+                "source": "WCX-WR",
+                "page": 73,
+                "tier": "major",
+                "rarity": "rare",
+                "valueMult": 3,
+                "valueExpression": "[[baseItem.value]] * 3",
+                "weightMult": 0.5,
+                "weightExpression": "[[baseItem.weight]] / 2",
+                "entries": [
+                    "This suit of armor is made of bone, a strong, off-white material scavenged from corpses. When wearing bone armor, you have advantage on saving throws against necromancy spells."
+                ]
+            }
+        },
+        {
+            "name": "Bone Spellcasting Focus",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "SCF"
+                }
+            ],
+            "excludes": {
+                "name": [
+                    "Crystal",
+                    "Wooden Staff"
+                ]
+            },
+            "entries": [
+                "A strong, off-white material scavenged from animal, monster, or humanoid corpses which is carved or cut into useful shapes. Used in areas without access to wood or metal, items made of this inflexible material are as durable as their standard version, but weigh half as much and have triple the cost.",
+                "When you cast a necromancy spell through a focus made from bone you can reroll one of the spell's damage dice."
+            ],
+            "inherits": {
+                "namePrefix": "Bone ",
+                "source": "WCX-WR",
+                "page": 73,
+                "tier": "minor",
+                "rarity": "unknown",
+                "valueMult": 3,
+                "valueExpression": "[[baseItem.value]] * 3",
+                "weightMult": 0.5,
+                "weightExpression": "[[baseItem.weight]] / 2",
+                "entries": [
+                    "This spellcasting focus is made of bone, a strong, off-white material scavenged from corpses. When you cast a necromancy spell through a focus made from bone you can reroll one of the spell's damage dice."
+                ]
+            }
+        },
+        {
+            "name": "Bronze Item",
+            "type": "GV",
+            "requires": [
+                {
+                    "armor": true,
+                    "source": "WCX-WR"
+                },
+                {
+                    "weapon": true,
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "S",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "AF",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "SCF"
+                }
+            ],
+            "excludes": {
+                "type": "LA",
+                "name": [
+                    "Hide Armor",
+                    "Crystal",
+                    "Wooden Staff"
+                ],
+                "net": true
+            },
+            "entries": [
+                "A gold-colored alloy of copper and tin. Though supplanted by iron and steel since ancient times for all but fey and elves (who are sensitive to iron's touch), bronze weapons are known for their magical affinity. When you create a magical item with bronze, it takes half the time and cost.",
+                "Mundane bronze items cost 50% more than their iron counterparts, and are produced and sold by few smiths. Most bronze weapons are antiques, though the use of bronze-cast cannons and bombards has caused a resurgence in its popularity."
+            ],
+            "inherits": {
+                "namePrefix": "Bronze ",
+                "source": "WCX-WR",
+                "page": 73,
+                "tier": "minor",
+                "rarity": "uncommon",
+                "valueMult": 1.5,
+                "valueExpression": "[[baseItem.value]] * 1.5",
+                "entries": [
+                    "This item is made of bronze, a gold-colored alloy of copper and tin."
+                ]
+            }
+        },
+        {
+            "name": "Dimeritium Armor",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "MA",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "HA",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "name": "Hide Armor"
+            },
+            "entries": [
+                "Dimeritium is a rare, shiny teal metal that blocks the flow of magical energy. When wearing armor made of dimeritium, you have advantage on saving throws against spells, but cannot cast spells yourself."
+            ],
+            "inherits": {
+                "namePrefix": "Dimeritium ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "entries": [
+                    "This suit of armor is reinforced with dimeritium, a shiny teal metal that blocks the flow of magical energy. When wearing armor made of dimeritium, you have advantage on saving throws against spells, but cannot cast spells yourself."
+                ]
+            }
+        },
+        {
+            "name": "Dimeritium Shield",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "S",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Dimeritium is a rare, shiny teal metal that blocks the flow of magical energy. When wielding a shield made of dimeritium, you have advantage on saving throws against spells, but cannot cast spells yourself."
+            ],
+            "inherits": {
+                "namePrefix": "Dimeritium ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "entries": [
+                    "This shield is reinforced with dimeritium, a shiny teal metal that blocks the flow of magical energy. When wielding a shield made of dimeritium, you have advantage on saving throws against spells, but cannot cast spells yourself."
+                ]
+            }
+        },
+        {
+            "name": "Dimeritium Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Dimeritium is a rare, shiny teal metal that blocks the flow of magical energy. Attacks with dimeritium weapons ignore magical effects that increase the target's AC, such as the bonus from +1 armor or the {@spell shield} spell."
+            ],
+            "inherits": {
+                "namePrefix": "Dimeritium ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "entries": [
+                    "This weapon is made of, or coated with dimeritium, a shiny teal metal that blocks the flow of magical energy. Attacks with dimeritium weapons ignore magical effects that increase the target's AC, such as the bonus from +1 armor or the {@spell shield} spell."
+                ]
+            }
+        },
+        {
+            "name": "Dimeritium Ammunition",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "AF",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Dimeritium is a rare, shiny teal metal that blocks the flow of magical energy. Attacks with dimeritium ammunition ignores magical effects that increase the target's AC, such as the bonus from +1 armor or the {@spell shield} spell."
+            ],
+            "inherits": {
+                "namePrefix": "Dimeritium ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "entries": [
+                    "This weapon is made of, or coated with dimeritium, a shiny teal metal that blocks the flow of magical energy. Attacks with dimeritium ammunition ignores magical effects that increase the target's AC, such as the bonus from +1 armor or the {@spell shield} spell."
+                ]
+            }
+        },
+        {
+            "name": "Flametouched Iron Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Flametouched Iron is a dark gray metal that takes on a reddish sheen when refined. Weapons made from flametouched iron are considered magical for the purposes of overcoming resistance and immunity to nonmagical damage when attacking undead or evil creatures."
+            ],
+            "inherits": {
+                "namePrefix": "Flametouched Iron ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "uncommon",
+                "entries": [
+                    "This weapon is made from flametouched iron, a dark gray metal that takes on a reddish sheen when refined. Weapons made from flametouched iron are considered magical for the purposes of overcoming resistance and immunity to nonmagical damage when attacking undead or evil creatures."
+                ]
+            }
+        },
+        {
+            "name": "Flametouched Iron Ammunition",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "AF",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Flametouched Iron is a dark gray metal that takes on a reddish sheen when refined. Ammunition made from flametouched iron is considered magical for the purposes of overcoming resistance and immunity to nonmagical damage when attacking undead or evil creatures."
+            ],
+            "inherits": {
+                "namePrefix": "Flametouched Iron ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "uncommon",
+                "entries": [
+                    "This ammunition is made from flametouched iron, a dark gray metal that takes on a reddish sheen when refined. Ammunition made from flametouched iron is considered magical for the purposes of overcoming resistance and immunity to nonmagical damage when attacking undead or evil creatures."
+                ]
+            }
+        },
+        {
+            "name": "Flametouched Iron Holy Symbol",
+            "type": "GV",
+            "requires": [
+                {
+                    "scfType": "holy"
+                }
+            ],
+            "entries": [
+                "Flametouched Iron is a dark gray metal that takes on a reddish sheen when refined. Holy symbols made from flametouched iron increases the CR of an undead that a {@class cleric} can destroy with {@classFeature Destroy Undead (CR 1/2)|Cleric||5||destroy undead} by 1."
+            ],
+            "inherits": {
+                "namePrefix": "Flametouched Iron ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "uncommon",
+                "entries": [
+                    "This holy symbol is made from flametouched iron, a dark gray metal that takes on a reddish sheen when refined. Holy symbols made from flametouched iron increases the CR of an undead that a {@class cleric} can destroy with {@classFeature Destroy Undead (CR 1/2)|Cleric||5||destroy undead} by 1."
+                ]
+            }
+        },
+        {
+            "name": "Iron Armor",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "MA",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "HA",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "name": "Hide Armor"
+            },
+            "entries": [
+                "Iron rusts and dulls faster than steel, but its ease of manufacture and low cost have made it popular for warriors on a budget—iron items cost half as much as their steel counterparts, though they have 3/4 the hit points and suffer doubled penalties from effects such as a rust monster's {@i rust metal} feature. Iron has a key advantage besides cost: its touch is excruciating to fey. When a fey touches an iron item while concentrating, the pain forces it to make a DC 10 Constitution saving throw or lose concentration."
+            ],
+            "inherits": {
+                "namePrefix": "Iron ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "minor",
+                "rarity": "common",
+                "valueMult": 0.75,
+                "valueExpression": "[[baseItem.value]] * 0.75",
+                "entries": [
+                    "This suit of armor is made of iron, it has 3/4 the hit points of its steel (normal) counterpart and suffers doubled penalties from effects such as a rust monster's {@i rust metal} feature. Iron's touch is excruciating to fey. When a fey touches an iron item while concentrating, the pain forces it to make a DC 10 Constitution saving throw or lose concentration."
+                ]
+            }
+        },
+        {
+            "name": "Iron Shield",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "S",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Iron rusts and dulls faster than steel, but its ease of manufacture and low cost have made it popular for warriors on a budget—iron items cost half as much as their steel counterparts, though they have 3/4 the hit points and suffer doubled penalties from effects such as a rust monster's {@i rust metal} feature. Iron has a key advantage besides cost: its touch is excruciating to fey. When a fey touches an iron item while concentrating, the pain forces it to make a DC 10 Constitution saving throw or lose concentration, and whan a fey makes a save to maintain concentration after being damage by an iron weapon, the DC is equal to the damage taken, rather than half."
+            ],
+            "inherits": {
+                "namePrefix": "Iron ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "minor",
+                "rarity": "common",
+                "valueMult": 0.75,
+                "valueExpression": "[[baseItem.value]] * 0.75",
+                "entries": [
+                    "This shield is made of iron, it has 3/4 the hit points of its steel (normal) counterpart and suffers doubled penalties from effects such as a rust monster's {@i rust metal} feature. Iron's touch is excruciating to fey. When a fey touches an iron item while concentrating, the pain forces it to make a DC 10 Constitution saving throw or lose concentration, and when a fey makes a save to maintain concentration after being damaged by an iron weapon, the DC is equal to the damage taken, rather than half."
+                ]
+            }
+        },
+        {
+            "name": "Iron Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Iron rusts and dulls faster than steel, but its ease of manufacture and low cost have made it popular for warriors on a budget—iron items cost half as much as their steel counterparts, though they have 3/4 the hit points and suffer doubled penalties from effects such as a rust monster's {@i rust metal} feature. Iron has a key advantage besides cost: its touch is excruciating to fey. When a fey touches an iron item while concentrating, the pain forces it to make a DC 10 Constitution saving throw or lose concentration, and whan a fey makes a save to maintain concentration after being damage by an iron weapon, the DC is equal to the damage taken, rather than half."
+            ],
+            "inherits": {
+                "namePrefix": "Iron ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "minor",
+                "rarity": "common",
+                "valueMult": 0.75,
+                "valueExpression": "[[baseItem.value]] * 0.75",
+                "entries": [
+                    "This weapon is made of iron, it has 3/4 the hit points of its steel (normal) counterpart and suffers doubled penalties from effects such as a rust monster's {@i rust metal} feature. Iron's touch is excruciating to fey. When a fey touches an iron item while concentrating, the pain forces it to make a DC 10 Constitution saving throw or lose concentration, and when a fey makes a save to maintain concentration after being damaged by an iron weapon, the DC is equal to the damage taken, rather than half."
+                ]
+            }
+        },
+        {
+            "name": "Iron Ammunition",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "AF",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Iron rusts and dulls faster than steel, but its ease of manufacture and low cost have made it popular for warriors on a budget—iron items cost half as much as their steel counterparts, though they have 3/4 the hit points and suffer doubled penalties from effects such as a rust monster's {@i rust metal} feature. Iron has a key advantage besides cost: its touch is excruciating to fey. When a fey touches an iron item while concentrating, the pain forces it to make a DC 10 Constitution saving throw or lose concentration, and whan a fey makes a save to maintain concentration after being damaged by an iron piece of ammunition, the DC is equal to the damage taken, rather than half."
+            ],
+            "inherits": {
+                "namePrefix": "Iron ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "minor",
+                "rarity": "common",
+                "valueMult": 0.75,
+                "valueExpression": "[[baseItem.value]] * 0.75",
+                "entries": [
+                    "This ammunition is made of iron, it has 3/4 the hit points of its steel (normal) counterpart and suffers doubled penalties from effects such as a rust monster's {@i rust metal} feature. Iron's touch is excruciating to fey. When a fey touches an iron item while concentrating, the pain forces it to make a DC 10 Constitution saving throw or lose concentration, and when a fey makes a save to maintain concentration after being damaged by an iron piece of ammunition, the DC is equal to the damage taken, rather than half."
+                ]
+            }
+        },
+        {
+            "name": "Ironwood Armor",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "MA",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "HA",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "name": "Hide Armor"
+            },
+            "entries": [
+                "Grown by druids for weapons and armor, this fireproof wood is as dense and resilient as metal, with all the properties of steel. Ironwood items are considered wood, rather than metal when a game effect considers its material."
+            ],
+            "inherits": {
+                "namePrefix": "Ironwood ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "entries": [
+                    "This suit of armor is made of ironwood, and is as dense and resilient as metal. Ironwood armor is considered wood, rather than metal, when a game effect considers its material."
+                ]
+            }
+        },
+        {
+            "name": "Ironwood Shield",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "S",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Grown by druids for weapons and armor, this fireproof wood is as dense and resilient as metal, with all the properties of steel. Ironwood items are considered wood, rather than metal when a game effect considers its material."
+            ],
+            "inherits": {
+                "namePrefix": "Ironwood ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "entries": [
+                    "This shield is made of ironwood, and is as dense and resilient as metal. Ironwood shields are considered wood, rather than metal, when a game effect considers its material."
+                ]
+            }
+        },
+        {
+            "name": "Ironwood Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Grown by druids for weapons and armor, this fireproof wood is as dense and resilient as metal, with all the properties of steel. Ironwood items are considered wood, rather than metal when a game effect considers its material."
+            ],
+            "inherits": {
+                "namePrefix": "Ironwood ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "entries": [
+                    "This weapon is made of ironwood, and is as dense and resilient as metal. Ironwood weapons are considered wood, rather than metal, when a game effect considers its material."
+                ]
+            }
+        },
+        {
+            "name": "Ironwood Ammunition",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "Grown by druids for weapons and armor, this fireproof wood is as dense and resilient as metal, with all the properties of steel. Ironwood items are considered wood, rather than metal when a game effect considers its material."
+            ],
+            "inherits": {
+                "namePrefix": "Ironwood ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "minor",
+                "rarity": "rare",
+                "entries": [
+                    "This ammunition is made of ironwood, and is as dense and resilient as metal. Ironwood ammunition is considered wood, rather than metal, when a game effect considers its material."
+                ]
+            }
+        },
+        {
+            "name": "Mithral Armor",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "MA",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "HA",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "name": "Hide Armor"
+            },
+            "entries": [
+                "A flexible material with a pale silver-blue sheen, mithral is prized for its unmatched light weight—mithral items weigh half as much as their default versions. If an armor normally imposes disadvantage on Dexterity ({@skill Stealth}) checks or has a Strength requirement, the mithral version doesn't."
+            ],
+            "inherits": {
+                "namePrefix": "Mithral ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "weightMult": 0.5,
+                "weightExpression": "[[baseItem.weight]] * 0.5",
+                "stealth": false,
+                "strength": null,
+                "entries": [
+                    "A flexible material with a pale silver-blue sheen, mithral is prized for its unmatched light weight—mithral items weigh half as much as their default versions. If an armor normally imposes disadvantage on Dexterity ({@skill Stealth}) checks or has a Strength requirement, the mithral version doesn't."
+                ]
+            }
+        },
+        {
+            "name": "Mithral Shield",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "S",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "A flexible material with a pale silver-blue sheen, mithral is prized for its unmatched light weight—mithral items weigh half as much as their default versions. If a shield normally imposes disadvantage on Dexterity ({@skill Stealth}) checks or has a Strength requirement, the mithral version doesn't. Finally, if you attack with a mithral shield that has the heavy property, you can do so without penalties regardless of your Strength or size."
+            ],
+            "inherits": {
+                "namePrefix": "Mithral ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "weightMult": 0.5,
+                "weightExpression": "[[baseItem.weight]] * 0.5",
+                "entries": [
+                    "A flexible material with a pale silver-blue sheen, mithral is prized for its unmatched light weight—mithral items weigh half as much as their default versions. If a shield normally imposes disadvantage on Dexterity ({@skill Stealth}) checks or has a Strength requirement, the mithral version doesn't. Finally, if you attack with a mithral shield that has the heavy property, you can do so without penalties regardless of your Strength or size."
+                ]
+            }
+        },
+        {
+            "name": "Mithral Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "weapon": true,
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "net": true
+            },
+            "entries": [
+                "A flexible material with a pale silver-blue sheen, mithral is prized for its unmatched light weight—mithral items weigh half as much as their default versions. If you attack with a mithral weapon that has the heavy property, you can do so without penalties regardless of your Strength or size."
+            ],
+            "inherits": {
+                "namePrefix": "Mithral ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "weightMult": 0.5,
+                "weightExpression": "[[baseItem.weight]] * 0.5",
+                "entries": [
+                    "A flexible material with a pale silver-blue sheen, mithral is prized for its unmatched light weight—mithral items weigh half as much as their default versions. If you attack with a mithral weapon that has the heavy property, you can do so without penalties regardless of your Strength or size."
+                ]
+            }
+        },
+        {
+            "name": "Obsidian Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "name": [
+                    "Cestus",
+                    "Chain Whip",
+                    "Club",
+                    "Greatclub",
+                    "Light Hammer",
+                    "Mace",
+                    "Maul",
+                    "Peasant Flail",
+                    "Quarterstaff"
+                ]
+            },
+            "entries": [
+                "A precious black volcanic glass, weapons made with this delicate stone are razor-sharp. In addition to its typical properties, an obsidian weapon that deals piercing damage gains the skewering property, or the slicing property if it deals slashing damage, so long as it doesn't have the same property. Items made from obsidian cost four times more than their normal counterparts."
+            ],
+            "inherits": {
+                "namePrefix": "Obsidian ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "valueMult": 4,
+                "valueExpression": "[[baseItem.value]] * 4",
+                "entries": [
+                    "A precious black volcanic glass, weapons made with this delicate stone are razor-sharp. In addition to its typical properties, an obsidian weapon that deals piercing damage gains the skewering property, or the slicing property if it deals slashing damage, so long as it doesn't have the same property."
+                ]
+            }
+        },
+        {
+            "name": "Obsidian Ammunition",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "dmgType": "B"
+            },
+            "entries": [
+                "A precious black volcanic glass, weapons made with this delicate stone are razor-sharp. In addition to its typical properties, an obsidian piece of ammunition that deals piercing damage gains the skewering property, or the slicing property if it deals slashing damage, so long as it doesn't have the same property. Items made from obsidian cost four times more than their normal counterparts."
+            ],
+            "inherits": {
+                "namePrefix": "Obsidian ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "rare",
+                "valueMult": 4,
+                "valueExpression": "[[baseItem.value]] * 4",
+                "entries": [
+                    "A precious black volcanic glass, ammunition made with this delicate stone are razor-sharp. In addition to its typical properties, an obsidian piece of ammunition that deals piercing damage gains the skewering property, or the slicing property if it deals slashing damage, so long as it doesn't have the same property."
+                ]
+            }
+        },
+        {
+            "name": "Silvered Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "A shiny pale-gray material often associated with the moon, some monsters have a supernatural vulnerability to this precious metal. A skilled craftsman can plate a single weapon with silver with 100 gp, which represents not only the price of materials but the time to add silver to the weapon without reducing its effectiveness. Unlike most materials, a weapon that is silvered retains all the properties of its original material."
+            ],
+            "inherits": {
+                "namePrefix": "Silvered ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "uncommon",
+                "valueExpression": "[[baseItem.value]] + 10000",
+                "entries": [
+                    "A shiny pale-gray material often associated with the moon, some monsters have a supernatural vulnerability to this precious metal. A weapon that is silvered retains all the properties of its original material."
+                ]
+            }
+        },
+        {
+            "name": "Silvered Ammunition",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "AF",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "name": "Silver Bullet"
+            },
+            "entries": [
+                "A shiny pale-gray material often associated with the moon, some monsters have a supernatural vulnerability to this precious metal. A skilled craftsman can plate 10 pieces of ammunition with silver with 100 gp, which represents not only the price of materials but the time to add silver to the ammunition without reducing its effectiveness. Unlike most materials, a piece of ammunition that is silvered retains all the properties of its original material."
+            ],
+            "inherits": {
+                "namePrefix": "Silvered ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "minor",
+                "rarity": "uncommon",
+                "valueExpression": "[[baseItem.value]] + 1000",
+                "entries": [
+                    "A shiny pale-gray material often associated with the moon, some monsters have a supernatural vulnerability to this precious metal. A piece of ammunition that is silvered retains all the properties of its original material."
+                ]
+            }
+        },
+        {
+            "name": "Stone Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "property": [
+                    "F",
+                    "WCXL",
+                    "WCXSKW",
+                    "WCXSLC"
+                ]
+            },
+            "entries": [
+                "All weapons made from stone deal bludgeoning damage, even if they would normally deal another type. Any stone weapon that does not have the finesse or light properties gains the heavy property. Stone weapons weigh 4 times as much as usual, and cost twice as much."
+            ],
+            "inherits": {
+                "namePrefix": "Stone ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "uncommon",
+                "valueMult": 2,
+                "valueExpression": "[[baseItem.value]] * 2",
+                "weightMult": 4,
+                "weightExpression": "[[baseItem.weight]] * 4",
+                "dmgType": "B",
+                "propertyAdd": [
+                    "WCXH"
+                ],
+                "entries": [
+                    "All weapons made from stone deal bludgeoning damage, even if they would normally deal another type. Any stone weapon that does not have the finesse or light properties gains the heavy property. Stone weapons weigh 4 times as much as usual, and cost twice as much."
+                ]
+            }
+        },
+        {
+            "name": "Stone Weapon (finesse, light)",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "property": "F",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "M",
+                    "property": "WCXL",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "property": [
+                    "WCXSKW",
+                    "WCXSLC"
+                ]
+            },
+            "entries": [
+                "All weapons made from stone deal bludgeoning damage, even if they would normally deal another type. Any stone weapon that ordinarily has the finesse or light properties loses those properties. Stone weapons weigh 4 times as much as usual, and cost twice as much."
+            ],
+            "inherits": {
+                "namePrefix": "Stone ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "uncommon",
+                "valueMult": 2,
+                "valueExpression": "[[baseItem.value]] * 2",
+                "weightMult": 4,
+                "weightExpression": "[[baseItem.weight]] * 4",
+                "dmgType": "B",
+                "propertyRemove": [
+                    "F",
+                    "WCXL"
+                ],
+                "entries": [
+                    "All weapons made from stone deal bludgeoning damage, even if they would normally deal another type. Any stone weapon that ordinarily has the finesse or light properties loses those properties. Stone weapons weigh 4 times as much as usual, and cost twice as much."
+                ]
+            }
+        },
+        {
+            "name": "Stone Weapon (skewering, slicing)",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "property": "WCXSKW",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "M",
+                    "property": "WCXSLC",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "property": [
+                    "F",
+                    "WCXL"
+                ]
+            },
+            "entries": [
+                "All weapons made from stone deal bludgeoning damage, even if they would normally deal another type. A stone weapon with the skewering or slicing properties loses those properties and gains the staggering property instead. Stone weapons weigh 4 times as much as usual, and cost twice as much."
+            ],
+            "inherits": {
+                "namePrefix": "Stone ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "uncommon",
+                "valueMult": 2,
+                "valueExpression": "[[baseItem.value]] * 2",
+                "weightMult": 4,
+                "weightExpression": "[[baseItem.weight]] * 4",
+                "dmgType": "B",
+                "propertyRemove": [
+                    "WCXSKW",
+                    "WCXSLC"
+                ],
+                "propertyAdd": [
+                    "WCXSTGR",
+                    "WCXH"
+                ],
+                "entries": [
+                    "All weapons made from stone deal bludgeoning damage, even if they would normally deal another type. A stone weapon with the skewering or slicing properties loses those properties and gains the staggering property instead. Stone weapons weigh 4 times as much as usual, and cost twice as much."
+                ]
+            }
+        },
+        {
+            "name": "True Ice Armor",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "MA",
+                    "source": "WCX-WR"
+                },
+                {
+                    "type": "HA",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "name": "Hide Armor"
+            },
+            "entries": [
+                "True Ice is an exceptional magical material that comes from the core of polar caps and mountain peaks, and never melts. Armor made from True Ice grants resistance to fire damage and immunity to atmospheric hazards in hot environments, but halves the time required to make saves against cold."
+            ],
+            "inherits": {
+                "namePrefix": "True Ice ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "uncommon",
+                "entries": [
+                    "This suit of armor is reinforced with true ice, a magical material from the core of polar caps and mountain peaks that never melts. When wearing true ice armor, you gain resistance to fire damage and immunity to atmospheric hazards in hot environments, but the time required to make saves against cold is halved."
+                ]
+            }
+        },
+        {
+            "name": "True Ice Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "True Ice is an exceptional magical material that comes from the core of polar caps and mountain peaks, and never melts. Elementals aligned with fire or water are vulnerable to damage from true ice weapons."
+            ],
+            "inherits": {
+                "namePrefix": "True Ice ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "uncommon",
+                "entries": [
+                    "This weapon is made with true ice, a magical material from the core of polar caps and mountain peaks that never melts. Elementals aligned with fire or ater are vulnerable to damage from true ice weapons."
+                ]
+            }
+        },
+        {
+            "name": "True Ice Ammunition",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                }
+            ],
+            "entries": [
+                "True Ice is an exceptional magical material that comes from the core of polar caps and mountain peaks, and never melts. Elementals aligned with fire or water are vulnerable to damage from true ice ammunition."
+            ],
+            "inherits": {
+                "namePrefix": "True Ice ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "major",
+                "rarity": "uncommon",
+                "entries": [
+                    "This weapon is made with true ice, a magical material from the core of polar caps and mountain peaks that never melts. Elementals aligned with fire or ater are vulnerable to damage from true ice ammunition."
+                ]
+            }
+        },
+        {
+            "name": "Wood Weapon",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "M",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "name": [
+                    "Club",
+                    "Greatclub",
+                    "Peasant Flail",
+                    "Quarterstaff"
+                ]
+            },
+            "entries": [
+                "Softer and more flexible than most materials, a wooden weapon has the blunted modification, and costs half as much."
+            ],
+            "inherits": {
+                "namePrefix": "Wood ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "minor",
+                "rarity": "common",
+                "valueMult": 0.5,
+                "valueExpression": "[[baseItem.value]] * 0.5",
+                "propertyAdd": [
+                    "WCXBLNT",
+                    "WCXNL"
+                ],
+                "entries": [
+                    "This weapon is made with wood, a softer and more flexible material. It has the blunted modification and costs half as much."
+                ]
+            }
+        },
+        {
+            "name": "Wood Ammunition",
+            "type": "GV",
+            "requires": [
+                {
+                    "type": "A",
+                    "source": "WCX-WR"
+                }
+            ],
+            "excludes": {
+                "name": [
+                    "Blowgun Needle",
+                    "Field Arrow",
+                    "Firecage Arrow",
+                    "Hunting Bolt",
+                    "Quarrel",
+                    "Whistling Arrow"
+                ]
+            },
+            "entries": [
+                "Softer and more flexible than most materials, wooden ammunition has the blunted modification, and costs half as much."
+            ],
+            "inherits": {
+                "namePrefix": "Wood ",
+                "source": "WCX-WR",
+                "page": 74,
+                "tier": "minor",
+                "rarity": "common",
+                "valueMult": 0.5,
+                "valueExpression": "[[baseItem.value]] * 0.5",
+                "propertyAdd": [
+                    "WCXBLNT",
+                    "WCXNL"
+                ],
+                "entries": [
+                    "This ammunition is made with wood, a softer and more flexible material. It has the blunted modification and costs half as much."
+                ]
+            }
         }
     ],
 
